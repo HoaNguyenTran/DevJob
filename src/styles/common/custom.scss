@@ -1,0 +1,143 @@
+// WARNING ~~~
+
+// NO WRITE HERE 
+// IF YOU HAVE TIME, PLEASE MIGRATE FILE
+
+
+
+/* Migrate file share auth  */
+
+
+.auth-main_title {
+  text-align: center;
+}
+.auth-main_title span {
+  font-size: 20px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.35;
+  letter-spacing: -0.1px;
+  text-align: left;
+  color: #2a2e43;
+}
+
+.auth-main_form {
+  margin: 40px 0px 0px 0px;
+}
+.auth-main_form .auth-main__input--vertical16 {
+  margin-bottom: 16px;
+}
+.auth-main_form input[type='text'],
+.auth-main_form input[type='password'] {
+  width: 100%;
+  height: 48px;
+  border-radius: 6px;
+  border: solid 1px rgba(181, 185, 195, 0.35);
+  padding-left: 15px;
+}
+.auth-main_form .ant-input-group-addon {
+  border-top-left-radius: 6px !important;
+  border-bottom-left-radius: 6px !important;
+  background-color: #f1f1f5 !important;
+}
+
+.auth-askaccount2 {
+  width: 100%;
+  margin-top: 30px;
+  text-align: center;
+}
+.auth-askaccount2 a {
+  color: var(--primary-color);
+  font-weight: bold;
+}
+.auth-askaccount2 a:hover {
+  text-decoration: underline;
+}
+
+.auth-social {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+.auth-social button {
+  cursor: pointer;
+  position: relative;
+  width: 48%;
+  height: 40px;
+  color: var(--white-color);
+  border-radius: 6px;
+  border: solid 1px rgba(181, 185, 195, 0.35);
+  background-color: #0b63d4;
+}
+.auth-social button span:first-child {
+  position: absolute;
+  font-size: 24px;
+  top: 4px;
+  left: 6px;
+}
+
+.auth-social button:last-child {
+  background-color: #c9292b;
+}
+
+.auth-legend {
+  margin: 40px 0px;
+}
+.auth-legend p {
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid #d6d6d6;
+  line-height: 0.1em;
+  margin: 10px 0 20px;
+}
+.auth-legend p span {
+  background: var(--white-color);
+  padding: 0 25px;
+}
+.justify-content-space-between {
+  justify-content: space-between;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.font-weight-500 {
+  font-weight: 500;
+}
+
+.text-line-clamp-1 {
+  overflow: hidden !important;
+  -webkit-line-clamp: 1 !important;
+  display: block !important;
+  display: -webkit-box !important;
+  -webkit-box-orient: vertical !important;
+  text-overflow: ellipsis !important;
+  white-space: normal !important;
+}
+.text-line-clamp-2 {
+  overflow: hidden !important;
+  -webkit-line-clamp: 2 !important;
+  display: block !important;
+  display: -webkit-box !important;
+  -webkit-box-orient: vertical !important;
+  text-overflow: ellipsis !important;
+  white-space: normal !important;
+}
+.object-fit-cover {
+  object-fit: cover;
+}
+.object-fit-contain {
+  object-fit: contain;
+}
+
+@media screen and (max-width: 640px) {
+  .auth-main_des {
+    width: 320px;
+  }
+}
+
+
+
+

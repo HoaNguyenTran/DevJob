@@ -1,0 +1,65 @@
+.candidateList {
+  padding: 0 1rem;
+  min-height: 750px;
+  &_empty {
+    text-align: center;
+    margin-top: 3rem;
+  }
+  &_modal {
+    &_accept {
+      margin: 0.25rem 0;
+      span {
+        font-weight: 500;
+      }
+      &_main {
+        margin: 1rem 0;
+      }
+      &_title {
+        font-size: 1.125rem;
+        font-weight: 500;
+        margin-bottom: 1rem;
+      }
+      &_action {
+        border-top: 1px solid var(--border-color);
+        padding: 1rem 0 0;
+        display: flex;
+        gap: 2rem;
+        flex-direction: row-reverse;
+      }
+      &_cancel,
+      &_ok {
+        padding: 0.5rem 3rem;
+        border: 1px solid var(--primary-color);
+        border-radius: var(--border-radius);
+        background-color: var(--primary-color);
+        font-weight: 500;
+        color: var(--white-color);
+        cursor: pointer;
+      }
+      &_cancel {
+        background-color: var(--white-color);
+        color: var(--primary-color);
+      }
+    }
+    &_more {
+      input {
+        border: none;
+        border-bottom: 1px solid var(--black-color);
+        width: 300px;
+        margin-left: 1rem;
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+  }
+  &_pagi {
+    text-align: center;
+    margin: 2rem;
+  }
+  &_content {
+    padding: 2rem 0.5rem;
+  }
+  .candidate {
+  }
+}

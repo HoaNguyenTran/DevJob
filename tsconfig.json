@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "src/*": ["src/*"]
+    },
+    "target": "es2015",
+    "module": "esnext",
+    "strict": true,
+    "allowJs": true,
+    "jsx": "preserve",
+    "noEmit": true,
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "isolatedModules": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+
+    // disable check any type
+    "noImplicitAny": false
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/components/elements/Map/Map.tss"],
+  "exclude": ["node_modules", ".next", "dist"]
+}

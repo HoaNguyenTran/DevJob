@@ -1,0 +1,445 @@
+.verify,
+.contact,
+.hiring,
+.findEE,
+.signup,
+.map,
+.signin,
+.profile {
+  .ant-select-selection-item {
+    max-width: 37rem;
+  }
+
+  .ant-input-password {
+    padding: 8px 1rem;
+    border-radius: 7px;
+  }
+
+  .ant-form-item-control {
+    display: flex;
+    justify-content: center;
+  }
+
+  .ant-form-item-control-input-content {
+    > input {
+      padding: 8px 8px;
+      border-radius: 7px;
+    }
+  }
+
+  .ant-form-item-control-input {
+    border-radius: 7px;
+  }
+
+  .ant-form-item-explain-error {
+    margin: 0.5rem 0 0.75rem;
+  }
+
+  .ant-form-item-label {
+    text-align: left;
+    white-space: normal;
+    overflow: visible;
+    display: flex;
+    padding: 4px 0;
+  }
+
+  .ant-select-selection-search {
+    display: flex;
+    align-items: center;
+  }
+
+  .ant-input-number {
+    height: 40px;
+    width: 140px;
+    display: flex;
+    align-items: center;
+    border-radius: 7px;
+  }
+
+  .ant-radio-wrapper {
+    width: 160px !important;
+  }
+
+  .ant-select-single:not(.ant-select-customize-input) .ant-select-selector {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+    border-radius: 7px;
+  }
+
+  .ant-select:not(.ant-select-customize-input) .ant-select-selector {
+    // height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 5px 12px;
+    border-radius: 7px;
+  }
+
+  .ant-input-number-handler-wrap {
+    background: transparent;
+  }
+
+  .ant-input-number-handler {
+    &:active {
+      background: transparent;
+    }
+    background: transparent;
+  }
+
+  .ant-steps {
+    margin-top: 5rem;
+  }
+
+  .ant-radio-wrapper {
+    width: 8rem;
+  }
+
+  .ant-picker-range,
+  .ant-picker {
+    // width: 200px;
+    height: 40px;
+    border-radius: 7px;
+  }
+
+  .ant-picker-range {
+    width: 294px;
+  }
+
+  .ant-checkbox-group {
+    display: grid;
+    grid-gap: 8px;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  }
+  .ant-form label {
+    min-width: 100px;
+  }
+  .ant-checkbox-wrapper + .ant-checkbox-wrapper {
+    margin-left: 0;
+  }
+
+  &_workAddress {
+    .ant-form-item {
+      width: 100%;
+    }
+  }
+
+  &_workTime {
+    .ant-checkbox-group {
+      display: flex;
+    }
+  }
+
+  &_desc {
+    .ant-input {
+      border-radius: 7px;
+    }
+  }
+
+  &_upload,
+  &_draft {
+    .ant-btn {
+      border-radius: 7px;
+    }
+  }
+
+  &_continue {
+    .ant-btn-primary {
+      background-color: var(--primary-color);
+      border-color: var(--primary-color);
+      border-radius: 7px;
+      height: auto;
+      padding: 0.5rem 1rem;
+    }
+  }
+
+  &_salary {
+    .ant-select:not(.ant-select-customize-input) .ant-select-selector,
+    .ant-form-item-explain-error {
+      width: 140px;
+    }
+  }
+
+  &_gender {
+    .ant-checkbox-group {
+      display: flex;
+    }
+  }
+
+  &_age {
+    &_content {
+      display: flex;
+      > div {
+        display: flex;
+      }
+    }
+  }
+}
+
+.map {
+  .ant-select-selector {
+    min-width: 600px;
+    max-width: 600px;
+  }
+}
+
+.ant-drawer-content-wrapper {
+  width: 80 !important;
+}
+.address-cascader {
+  z-index: 2;
+  .ant-divider-horizontal {
+    margin-top: 3px !important;
+    margin-bottom: 3px !important;
+  }
+}
+
+.buyMoreModal {
+  .ant-input-number-handler-wrap {
+    display: none;
+  }
+  .ant-input-number-input-wrap {
+    border: none;
+    background-color: transparent;
+  }
+}
+
+.hiring_message {
+  label {
+    color: var(--gray-color) !important;
+  }
+}
+
+.hiring_timePost_save,
+.hiring_upload {
+  .ant-btn {
+    &:focus,
+    &:hover {
+      color: var(--primary-color);
+      border-color: var(--primary-color);
+    }
+  }
+}
+
+.findEE_sidebar {
+  .ant-row {
+    margin-bottom: 0;
+  }
+  .ant-card {
+    border-radius: 1rem;
+    overflow: hidden;
+    background-color: white;
+    .ant-card-body {
+      padding: 0 !important;
+      background-color: white;
+      .ant-collapse {
+        border: none !important;
+        border-radius: 1rem !important;
+        overflow: hidden;
+        .ant-collapse-header {
+          font-weight: 500;
+          font-size: 18px;
+          color: #6e00c2 !important;
+          font-weight: bold;
+          background-color: white !important;
+        }
+      }
+    }
+  }
+}
+
+.header_draw {
+  .ant-collapse {
+    border: none;
+    // border-radius: 1rem;
+
+    .ant-collapse-header {
+      font-weight: 500;
+      // font-size: 18px;
+      // color: #6e00c2 !important;
+      // font-weight: bold;
+      // background-color: white !important;
+    }
+  }
+  .ant-collapse > .ant-collapse-item, .ant-collapse-content {
+    border: none;
+  }
+
+  // .ant-card {
+  //   border-radius: 1rem;
+  //   overflow: hidden;
+  //   background-color: white;
+  //   .ant-card-body {
+  //     padding: 0 !important;
+  //     background-color: white;
+  //     .ant-collapse {
+  //       border: none !important;
+  //       border-radius: 1rem !important;
+  //       overflow: hidden;
+  //       .ant-collapse-header {
+  //         font-weight: 500;
+  //         font-size: 18px;
+  //         color: #6E00C2 !important;
+  //         font-weight: bold;
+  //         background-color: white !important;
+  //       }
+  //     }
+  //   }
+  // }
+}
+
+.signup {
+  .ant-select-selector {
+    height: 44px;
+  }
+}
+
+.freetime {
+  .ant-checkbox-wrapper + .ant-checkbox-wrapper {
+    padding-left: 0 !important;
+    margin-left: 0 !important;
+  }
+  .ant-checkbox-wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 1rem 1rem 1rem 0;
+    background-color: #e9e9e9;
+    border-radius: 1rem;
+    justify-content: space-between;
+  }
+  .ant-checkbox + span {
+    margin: 0 auto 0 0;
+    padding-left: 1rem !important;
+    margin-left: 1rem !important;
+  }
+}
+
+.header {
+  .ant-menu-horizontal {
+    border-bottom: none;
+  }
+}
+
+.ant-popover {
+  .ant-popover-content {
+    border-radius: 0.5rem;
+    overflow: hidden;
+  }
+  .ant-popover-inner-content {
+    padding: 0 !important;
+  }
+}
+
+.candidate {
+  .ant-rate {
+    font-size: 1rem;
+  }
+}
+
+.search {
+  .ant-select-selector {
+    background-color: var(--bg-color) !important;
+    border: none !important;
+  }
+
+  .ant-cascader-input {
+    border: none;
+    &:focus {
+      box-shadow: none;
+    }
+  }
+  .ant-cascader-picker {
+    background-color: var(--bg-color);
+  }
+
+  .ant-select-focused:not(.ant-select-disabled).ant-select:not(.ant-select-customize-input) .ant-select-selector {
+    box-shadow: none;
+  }
+
+  .ant-collapse-header {
+    padding: 0 !important;
+  }
+  .ant-collapse-content {
+    background-color: transparent !important;
+    border: none !important;
+    .ant-collapse-content-box {
+      padding: 0 !important;
+    }
+  }
+  .ant-collapse-item {
+    border: none !important;
+    background-color: transparent !important;
+  }
+  .ant-row {
+    width: 100%;
+  }
+  .ant-select-selector {
+    background-color: white !important;
+  }
+}
+
+.hiring {
+  .ant-picker {
+    min-width: 200px;
+  }
+}
+.custom-alert .ant-alert-close-icon {
+  padding: 4px !important;
+  margin-left: 0 !important;
+}
+.ant-popover-buttons .ant-btn-sm {
+  height: 30px;
+  border-radius: 5px;
+}
+
+.modal_changePhoneNumber {
+  .ant-input {
+    border-radius: 7px;
+    padding: 0.5rem 1.5rem;
+  }
+}
+
+.custom-addon-input-number .ant-input-number-group > .ant-input-number:first-child,
+.ant-input-number-group-addon:first-child {
+  border-top-left-radius: 7px !important;
+  border-bottom-left-radius: 7px !important;
+}
+
+.custom-addon-input-number .ant-input-number-input-wrap {
+  height: 100% !important;
+  input {
+    height: 100% !important;
+  }
+}
+
+// .ant-input-number-input {
+//   text-align: right !important;
+// }
+
+.ant-dropdown-menu-vertical {
+  border-radius: 6px !important;
+}
+.custom-text-left-input {
+  width: 100% !important;
+  .ant-input-number-input-wrap {
+    width: 100% !important;
+    .ant-input-number-input {
+      text-align: left !important;
+    }
+  }
+}
+// _____ responsive _____
+@media screen and (max-width: 1440px) {
+}
+
+@media screen and (max-width: 1200px) {
+}
+
+@media screen and (max-width: 992px) {
+}
+
+@media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 375px) {
+}

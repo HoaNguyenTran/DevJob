@@ -1,0 +1,82 @@
+.layout  {
+  position: relative;
+  background-color: var(--bg-color);
+  
+  &_main {
+    // overflow: hidden;
+  }
+  &_app {
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    color: var(--primary-color);
+    // padding: 0.5rem 0;
+    background-color: var(--white-color);
+    z-index: 11;
+    border-top: 1px solid var(--gray-color);
+    font-weight: 500;
+    font-size: 18px;
+    // height: 90%;
+    &_inner {
+      position: relative;
+      a {
+        text-decoration: underline;
+      }
+      .warningAlertBrowser {
+        position: relative;
+        padding-bottom: 30px;
+        // ::after {
+        //   content: "▼";
+        //   padding: 12px 8px;
+        //   position: absolute;
+        //   right: 45px;
+        //   bottom: 4px;
+        //   z-index: 1;
+        //   text-align: center;
+        //   width: 45px;
+        //   height: 45px;
+        //   pointer-events: none;
+
+
+
+        //   animation-name: arrow;
+        //   animation-duration: 0.4s;
+        //   animation-delay: 0s;
+        //   animation-iteration-count: infinite;
+        //   @keyframes arrow {
+        //     0%   {right: 45px; bottom: 4px;}
+        //     25%  {right: 45px; bottom: 3px;}
+        //     50%  {right: 45px; bottom: 1px;}
+        //     75%  {right: 45px; bottom: 3px;}
+        //     100% {right: 45px; bottom: 4px;}
+        //   }
+        // }
+        
+      }
+      .optionsImage {
+        width: 20px;
+      }
+      .optionsMenu {
+        margin-top: 20px;
+        width: 200px;
+        height: 290px;
+        object-fit: cover;
+      }
+    }
+
+    &_action {
+      position: absolute;
+      left: 1rem;
+      bottom: 0rem;
+      z-index: 12;
+      color: var(--black-color);
+    }
+  }
+}
+
+@media screen and(max-width: 576px) {
+  .layout {
+    padding-bottom: 3rem;
+  }
+}

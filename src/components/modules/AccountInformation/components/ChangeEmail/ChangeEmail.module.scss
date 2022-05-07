@@ -1,0 +1,15 @@
+.modal {
+  .label {
+    margin-bottom: 2rem;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: underline;
+  }
+  .btn {
+     padding: 0.375rem 1.5rem;
+      border: 1px solid var(--secondary-color);
+      background-color: var(--secondary-color);
+      color: var(--white-color);
+      border-radius: var(--border-radius);
+  }
+}

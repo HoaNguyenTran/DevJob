@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36">
+  <g id="vicuatoi" transform="translate(-12 -512)">
+    <rect id="Rectangle_148952" data-name="Rectangle 148952" width="36" height="36" rx="18" transform="translate(12 512)" fill="none"/>
+    <g id="Group_18014" data-name="Group 18014" transform="translate(-1812.285 -487.891)">
+      <rect id="Rectangle_148945" data-name="Rectangle 148945" width="17.722" height="13.361" rx="2" transform="translate(1832.724 1012.084)" fill="none" stroke="#838383" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"/>
+      <path id="Rectangle_148946" data-name="Rectangle 148946" d="M2.209,0H6.042A1.081,1.081,0,0,1,7.122,1.081V3.356A1.063,1.063,0,0,1,6.06,4.419H2.209A2.209,2.209,0,0,1,0,2.209v0A2.209,2.209,0,0,1,2.209,0Z" transform="translate(1844.723 1016.555)" fill="none" stroke="#838383" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"/>
+      <circle id="Ellipse_7568" data-name="Ellipse 7568" cx="0.847" cy="0.847" r="0.847" transform="translate(1846.164 1017.918)" fill="#838383"/>
+      <path id="Path_21458" data-name="Path 21458" d="M1849.177,1012.084h0l-2.7-4.564a1.423,1.423,0,0,0-1.949-.5l-8.572,5.064Z" transform="translate(-0.154)" fill="none" stroke="#838383" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"/>
+      <line id="Line_665" data-name="Line 665" x1="7.209" y2="4.262" transform="translate(1839.3 1007.822)" fill="none" stroke="#838383" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"/>
+      <line id="Line_666" data-name="Line 666" x1="4.587" y2="2.752" transform="translate(1842.814 1009.332)" fill="none" stroke="#838383" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,21 @@
+server {
+  listen ${NGINX_PORT};
+  server_name  _;
+  # access_log   logs/access.log  main;
+
+  # pass requests for dynamic content to rails/turbogears/zope, et al
+  location / {
+    proxy_pass http://fjob-frontend:3000;
+  }
+}
+
+server {
+  listen ${NGINX_SECURE_PORT};
+  server_name  _;
+  # access_log   logs/access.log  main;
+
+  # pass requests for dynamic content to rails/turbogears/zope, et al
+  location / {
+    proxy_pass http://fjob-frontend:3000;
+  }
+}

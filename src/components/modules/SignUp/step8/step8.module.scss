@@ -1,0 +1,57 @@
+.main {
+  width: 620px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  &_text {
+    margin: 30px 0px;
+    .text_role {
+      font-weight: bold;
+      font-size: 24px;
+      text-align: center;
+    }
+  }
+  .company {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    .action {
+      background-color: #FF8500;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 10px;
+      height: 44px;
+      width: 100%;
+      cursor: pointer;
+      .text_action {
+        margin: 0;
+        color: white;
+        // font-size: 16px;
+        text-align: center;
+      }
+    }
+  }
+  .btn {
+    width: 100%;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    border-radius: 10px;
+    margin-top: 20px;
+    height: 44px;
+  }
+  .text {
+    text-align: left;
+    width: 100%;
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main {
+    width: 100%;
+  }
+}

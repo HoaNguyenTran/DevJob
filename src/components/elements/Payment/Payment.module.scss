@@ -1,0 +1,155 @@
+.payment {
+  width: 100%;
+  min-width: 1140px;
+
+  .payment_header {
+      width: 992px;
+    margin: 3rem auto;
+    background-color: var(--white-color);
+    border-radius: var(--border-radius);
+  }
+  &_wrap {
+    width: 992px;
+    margin: 3rem auto;
+    padding: 2rem 3rem;
+    background-color: var(--white-color);
+    border-radius: var(--border-radius);
+  }
+  &_title {
+    font-weight: 500;
+    font-size: 1.75rem;
+    text-align: center;
+    font-weight: 600;
+  }
+  &_info {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    display: flex;
+    gap: 4rem;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    
+
+    .payment_info_left {
+      display: flex;
+      flex: 1;
+     justify-content: space-between;
+
+    }
+    &_name {
+      font-size: 1.125rem;
+      font-weight: 600;
+    }
+    &_rank {
+
+    }
+    &_right {
+      text-align: right;
+      img {
+        margin-left: 0.5rem;
+      }
+      .wallet {
+        display: flex;
+        // justify-content: center;
+        align-items: center;
+        > div {
+          padding: 0 1rem;
+          border: 1px solid var(--secondary-color);
+          border-radius: var(--border-2x-radius);
+        }
+      }
+    }
+  }
+  &_package {
+    margin: 1.5rem 0;
+    padding: 0 2rem;
+    &_title {
+      font-weight: 500;
+      background-color: var(--red-color);
+      padding: .75rem;
+      color: var(--white-color);
+      font-size: 1.125rem;
+      border-radius: var(--border-radius);
+      margin-bottom: 2rem;
+    }
+    &_main {
+    }
+    &_item {
+      margin: 1rem 0;
+      background-color: var(--white-color);
+      border-radius: 8px;
+      display: flex;
+      overflow: hidden;
+      img {
+        width: 100px;
+        height: 100px;
+      }
+    }
+    &_information {
+      width: 100%;
+      justify-content: space-between;
+      align-items: center;
+      display: flex;
+      padding: 0 2rem;
+      background-color: var(--bg-color);
+
+      &_name {
+        font-weight: 500;
+      }
+      &_amount {
+        color: var(--secondary-color);
+      }
+      &_total {
+        display: flex;
+        align-items: center;
+      }
+      &_extra {
+        font-size: 14px;
+      }
+      &_number {
+        // font-size: 1.125rem;
+        // font-weight: 500;
+      }
+    }
+    &_cost {
+    }
+    &_buy {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      button {
+        background-color: var(--primary-color);
+        border: 1px solid var(--primary-color);
+        border-radius: var(--border-radius);
+        color: var(--white-color);
+        padding: 0.375rem 1.5rem;
+      }
+    }
+  }
+  .btn_next {
+    margin-top: 2rem;
+    border: 1px solid var(--secondary-color);
+    background-color: var(--secondary-color);
+    color: var(--white-color);
+    padding: 0.375rem 1.5rem;
+    border-radius: var(--border-radius);
+  }
+  
+}
+.modal_congrats {
+  text-align: center;
+  img {
+    width: 100%;
+  }
+}
+.modal_payment {
+    .model_item {
+      display: flex;
+      gap: .5rem;
+      margin: .5rem 0;
+      img {
+        max-width: 5rem;
+      }
+    }
+  }

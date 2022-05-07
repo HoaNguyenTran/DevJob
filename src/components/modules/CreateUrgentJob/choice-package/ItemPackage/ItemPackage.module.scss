@@ -1,0 +1,31 @@
+.item_package {
+  width: 100%;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  background-color: #f5f5f5;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  .price {
+    color: var(--secondary-color);
+    font-weight: bold;
+    font-size: 14px;
+  }
+  .infoPackage {
+    font-weight: bold;
+  }
+  .infoAccount {
+    border-top: 4px solid var(--secondary-color);
+    padding: 15px 0;
+  }
+  .btnBack {
+    display: flex;
+    align-items: flex-end;
+    button {
+      background-color: #aaa9ab !important;
+      border-color: #aaa9ab !important;
+      border-radius: 4px !important;
+      height: auto !important;
+      padding: 0.5rem 1rem !important;
+    }
+  }
+}

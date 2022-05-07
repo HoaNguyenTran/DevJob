@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="thoigianranh" transform="translate(6411 13196)">
+    <rect id="Rectangle_148697" data-name="Rectangle 148697" width="24" height="24" transform="translate(-6411 -13196)" fill="rgba(255,255,255,0)"/>
+    <g id="Group_14056" data-name="Group 14056" transform="translate(-6408.24 -13193.601)">
+      <g id="Group_14052" data-name="Group 14052" transform="translate(5.146 8.163)">
+        <path id="Path_15966" data-name="Path 15966" d="M2051.024-220.069l1.021,1.062,2.684-2.684" transform="translate(-2048.876 224.579)" fill="none" stroke="#858585" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2" fill-rule="evenodd"/>
+        <path id="Path_15967" data-name="Path 15967" d="M2041.693-231.555a4.1,4.1,0,0,0,4.094-4.093,4.1,4.1,0,0,0-4.094-4.093,4.1,4.1,0,0,0-4.093,4.093A4.1,4.1,0,0,0,2041.693-231.555Z" transform="translate(-2037.6 239.742)" fill="none" stroke="#858585" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2" fill-rule="evenodd"/>
+      </g>
+      <rect id="Rectangle_148303" data-name="Rectangle 148303" width="18.479" height="17.663" rx="2" transform="translate(0 1.537)" fill="none" stroke="#858585" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"/>
+      <line id="Line_594" data-name="Line 594" x2="18.479" transform="translate(0 5.396)" fill="none" stroke="#858585" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"/>
+      <g id="Group_14055" data-name="Group 14055" transform="translate(3.042 0)">
+        <g id="Group_14053" data-name="Group 14053" transform="translate(0)">
+          <line id="Line_595" data-name="Line 595" y2="3.075" fill="none" stroke="#858585" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"/>
+          <line id="Line_596" data-name="Line 596" y2="3.075" transform="translate(2.258)" fill="none" stroke="#858585" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"/>
+        </g>
+        <g id="Group_14054" data-name="Group 14054" transform="translate(10.136)">
+          <line id="Line_597" data-name="Line 597" y2="3.075" fill="none" stroke="#858585" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"/>
+          <line id="Line_598" data-name="Line 598" y2="3.075" transform="translate(2.258)" fill="none" stroke="#858585" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

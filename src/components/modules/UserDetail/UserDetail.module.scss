@@ -1,0 +1,19 @@
+.candidate {
+  .candidate_wrap {
+    max-width: 1140px;
+    margin: 0 auto;
+    // padding: 3rem 0;
+  }
+  .candidate_view {
+    text-align: center;
+    border-bottom: 1px solid var(--border-color);
+    margin: .5rem;
+    .btn {
+      margin-bottom: 2rem;
+      color: white;
+      background-color: var(--primary-color);
+      border-radius: var(--border-radius);
+      height: 3.5rem;
+    }
+  }
+}

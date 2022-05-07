@@ -1,0 +1,26 @@
+.main {
+  width: 620px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  &_cascader {
+    margin: 30px 0px;
+    border-radius: 10px;
+    width: 100%;
+  }
+}
+.btn {
+  width: 100%;
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  border-radius: 10px;
+  margin-top: 20px;
+  height: 44px;
+}
+
+@media screen and (max-width: 768px) {
+  .main {
+    width: 100%;
+  }
+}

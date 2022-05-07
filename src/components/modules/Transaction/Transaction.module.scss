@@ -1,0 +1,117 @@
+.transaction {
+  width: 100%;
+  min-width: 992px;
+  .transaction_wrap {
+    width: 768px;
+    margin: 3rem auto;
+  }
+  .transaction_header {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    border-radius: 10px;
+    border: 1px solid var(--primary-color);
+    .header_inner {
+      display: flex;
+      justify-content: space-between;
+      padding: 1rem;
+      .left,
+      .right {
+        .title {
+        }
+        .name {
+          font-weight: 500;
+        }
+        .wallet {
+          text-align: center;
+          margin: 0 auto;
+          border: 1px solid var(--secondary-color);
+          width: 70%;
+          border-radius: var(--border-2x-radius);
+        }
+      }
+    }
+  }
+  .transaction_main {
+    background-color: var(--white-color);
+    min-height: calc(100vh - 10rem);
+    .transaction_time {
+      padding: 1.5rem 0 0;
+      display: flex;
+      justify-content: space-evenly;
+
+      button {
+        height: 40px;
+        background-color: var(--secondary-color);
+        border: 1px solid var(--secondary-color);
+        color: var(--white-color);
+        border-radius: var(--border-radius);
+        width: 6rem;
+      }
+    }
+    .transaction_tab {
+      display: flex;
+      align-items: center;
+      background-color: #efe5fd;
+      border-radius: var(--border-radius);
+
+      height: 3.5rem;
+      margin: 0 2rem;
+      position: relative;
+
+      .transaction_overlay {
+        margin: 0 0.5rem;
+        height: 2.5rem;
+        width: 15rem;
+        background-color: white;
+        border-radius: var(--border-radius);
+        display: inline-block;
+        position: absolute;
+        transition: transform 0.5s ease-in-out;
+      }
+
+      .tab_tab {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 1rem;
+        cursor: pointer;
+        span {
+          color: #6e00c2;
+          font-size: 1.125rem;
+          z-index: 1;
+        }
+      }
+    }
+
+    .transaction_item {
+      .item_inner {
+        margin: 0 1.5rem;
+        padding: 1rem;
+        border-bottom: 1px solid var(--border-color);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .item_info {
+        .item_time {
+          color: #d6d6d6;
+          display: flex;
+          gap: 1.5rem;
+        }
+        .item_content {
+          font-weight: 600;
+          margin-top: 0.5rem;
+        }
+      }
+
+      .item_coin {
+        font-size: 1.125rem;
+      }
+    }
+    .transaction_pagi {
+      text-align: center;
+      padding: 2rem 0;
+    }
+  }
+}

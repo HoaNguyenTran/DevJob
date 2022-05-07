@@ -1,0 +1,223 @@
+.aboutus {
+  .inner {
+    max-width: 992px;
+    margin: 0 auto;
+    padding: 4rem 0rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  .employee,
+  .vision {
+    background-color: #f9f9f9;
+  }
+  .employer,
+  .roadmap {
+    background-color: var(--white-color);
+  }
+  .about,
+  .employer,
+  .employee {
+    .main {
+      display: flex;
+      justify-content: center;
+      // align-items: center;
+      flex-direction: column;
+      span {
+        font-weight: 500;
+      }
+      .title {
+        font-size: 30px;
+        font-weight: 600;
+        margin-bottom: 2rem;
+        color: var(--primary-color);
+      }
+      .info {
+        color: var(--secondary-color);
+        font-size: 1.25rem;
+        font-weight: 500;
+        padding-bottom: 1.5rem;
+      }
+      .info1 {
+        font-weight: 500;
+        padding-bottom: 0.75rem;
+      }
+      .content {
+        text-align: justify;
+      }
+      .content > div {
+        margin: 0.5rem 0;
+        img {
+          margin-right: 0.5rem;
+        }
+      }
+      .info2 {
+        padding-top: 2rem;
+      }
+
+      .info4 {
+        font-weight: 600;
+        padding-bottom: 1.5rem;
+      }
+    }
+    .image {
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  .about {
+    background: url("/assets/images/about-us/bg-1.png") no-repeat center center;
+  }
+  .employer,
+  .employee {
+    .main {
+      .subtitle {
+        font-size: 1.25rem;
+        font-weight: 600;
+        padding: 2rem 0 0;
+      }
+      .item {
+        margin: 0.5rem 0;
+        img {
+          margin-right: 0.5rem;
+          width: 1rem;
+        }
+        span {
+          margin: 0 0.5rem;
+        }
+      }
+    }
+  }
+
+  .roadmap {
+    padding: 2rem 0;
+    .inner,
+    .inner_mb {
+      background-image: url("/assets/images/about-us/roadmap.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      height: 500px;
+    }
+    .inner_mb {
+      margin-top: 2rem;
+      background-image: url("/assets/images/about-us/roadmap-mb.png");
+      width: 100%;
+      height: 650px;
+    }
+    .title {
+      text-align: center;
+      font-size: 1.75rem;
+      display: block;
+      width: 100%;
+      font-weight: 600;
+      color: var(--primary-color);
+    }
+  }
+  .vision {
+    background-image: url("/assets/images/about-us/bg-2.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .inner {
+      display: block;
+    }
+    .title {
+      text-align: center;
+      display: block;
+      width: 100%;
+      margin-bottom: 2rem;
+      font-size: 1.75rem;
+      font-weight: 600;
+      color: var(--primary-color);
+    }
+    .main {
+      overflow: auto;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      .title {
+        text-align: center;
+        margin: 1rem 0;
+      }
+      .left,
+      .right {
+        text-align: center;
+        img {
+          width: 220px;
+          margin-bottom: 1rem;
+        }
+      }
+    }
+
+    .center {
+      img {
+        width: 100%;
+        min-width: 326px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .aboutus {
+    .vision {
+      // display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .aboutus {
+    .inner {
+      padding: 4rem 0.5rem;
+    }
+    .about,
+    .employee {
+      .inner {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2rem;
+      }
+    }
+    .employer {
+      .inner {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2rem;
+      }
+    }
+
+    .vision {
+      .main {
+        scroll-snap-type: x mandatory;
+      }
+      .main > div {
+        width: 100vw;
+        padding: 0 2rem 2rem;
+        scroll-snap-align: start;
+      }
+      .center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+          max-width: 326px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .aboutus {
+    .inner {
+      padding: 2rem 0.5rem;
+    }
+    .roadmap {
+      // display: none;
+    }
+  }
+}

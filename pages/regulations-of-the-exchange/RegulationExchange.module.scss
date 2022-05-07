@@ -1,0 +1,22 @@
+.regulation_exchange {
+  .container {
+    padding: 40px 0;
+    max-width: 1200px;
+    margin: auto;
+    h3 {
+      margin-top: 0.5rem;
+    }
+    ul {
+      margin-top: 1rem;
+    }
+    .ul_raw {
+      list-style-type: disc !important;
+    }
+    .ul_decimal {
+      list-style-type: decimal !important;
+    }
+    .ul_circle {
+      list-style-type: circle !important;
+    }
+  }
+}

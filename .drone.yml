@@ -1,0 +1,187 @@
+---
+kind: pipeline
+type: docker
+name: default
+steps:
+  - name: prepare
+    image: busybox
+    commands:
+      - mkdir -p /cache/${DRONE_REPO}/docker
+    volumes:
+      - name: cache
+        path: /cache
+
+  - name: env:staging
+    image: nightfuryest/drone-plugin-secret-to-env
+    settings:
+      template: .deploy/.env.staging.template
+      file: .env
+      envs:
+        - API_URL
+        - NEXT_PUBLIC_WEB_ENV
+        - NEXT_PUBLIC_API_URL
+        - NEXT_PUBLIC_API_VERSION
+        - NEXT_PUBLIC_AGORA_APPID
+        - NEXT_PUBLIC_SENTRY_DSN
+        - NEXT_PUBLIC_SENTRY_ENVIRONMENT
+        - NEXT_PUBLIC_SENTRY_URL
+        - NEXT_PUBLIC_SENTRY_ORG
+        - NEXT_PUBLIC_SENTRY_PROJECT
+        - NEXT_PUBLIC_FIREBASE_APIKEY
+        - NEXT_PUBLIC_FIREBASE_PROJECTID
+        - NEXT_PUBLIC_FIREBASE_MESSAGINGSENDERID
+        - NEXT_PUBLIC_FIREBASE_APPID
+        - NEXT_PUBLIC_FIREBASE_MEASUREMENTID
+        - NEXT_PUBLIC_GOONG_KEY_API
+        - NEXT_PUBLIC_GOONG_KEY_MAP
+        - NEXT_PUBLIC_MQTT_HOST
+        - NEXT_PUBLIC_FACEBOOK_PIXEL_ID
+      API_URL:
+        from_secret: API_URL
+      NEXT_PUBLIC_WEB_ENV:
+        from_secret: NEXT_PUBLIC_WEB_ENV
+      NEXT_PUBLIC_API_URL:
+        from_secret: NEXT_PUBLIC_API_URL
+      NEXT_PUBLIC_API_VERSION:
+        from_secret: NEXT_PUBLIC_API_VERSION
+      NEXT_PUBLIC_AGORA_APPID:
+        from_secret: NEXT_PUBLIC_AGORA_APPID
+      NEXT_PUBLIC_SENTRY_DSN:
+        from_secret: NEXT_PUBLIC_SENTRY_DSN
+      NEXT_PUBLIC_SENTRY_ENVIRONMENT:
+        from_secret: NEXT_PUBLIC_SENTRY_ENVIRONMENT
+      NEXT_PUBLIC_SENTRY_URL:
+        from_secret: NEXT_PUBLIC_SENTRY_URL
+      NEXT_PUBLIC_SENTRY_ORG:
+        from_secret: NEXT_PUBLIC_SENTRY_ORG
+      NEXT_PUBLIC_SENTRY_PROJECT:
+        from_secret: NEXT_PUBLIC_SENTRY_PROJECT
+      NEXT_PUBLIC_FIREBASE_APIKEY:
+        from_secret: NEXT_PUBLIC_FIREBASE_APIKEY
+      NEXT_PUBLIC_FIREBASE_PROJECTID:
+        from_secret: NEXT_PUBLIC_FIREBASE_PROJECTID
+      NEXT_PUBLIC_FIREBASE_MESSAGINGSENDERID:
+        from_secret: NEXT_PUBLIC_FIREBASE_MESSAGINGSENDERID
+      NEXT_PUBLIC_FIREBASE_APPID:
+        from_secret: NEXT_PUBLIC_FIREBASE_APPID
+      NEXT_PUBLIC_FIREBASE_MEASUREMENTID:
+        from_secret: NEXT_PUBLIC_FIREBASE_MEASUREMENTID
+      NEXT_PUBLIC_GOONG_KEY_API:
+        from_secret: NEXT_PUBLIC_GOONG_KEY_API
+      NEXT_PUBLIC_GOONG_KEY_MAP:
+        from_secret: NEXT_PUBLIC_GOONG_KEY_MAP
+      NEXT_PUBLIC_MQTT_HOST:
+        from_secret: NEXT_PUBLIC_MQTT_HOST
+      NEXT_PUBLIC_FACEBOOK_PIXEL_ID:
+        from_secret: NEXT_PUBLIC_FACEBOOK_PIXEL_ID
+    when:
+      branch:
+        - staging-*
+
+  - name: env:release
+    image: nightfuryest/drone-plugin-secret-to-env
+    settings:
+      template: .deploy/.env.release.template
+      file: .env
+      envs:
+        - API_URL
+      API_URL:
+        from_secret: RELEASE_API_URL
+    when:
+      branch:
+        - release/*
+
+  - name: Install Packages
+    image: node:14-alpine
+    commands:
+      - node -v
+      - npm -v
+      - yarn --version
+      - yarn config set cache-folder /yarn
+      - yarn install --pure-lockfile --production=false
+    volumes:
+      - name: yarn
+        path: /yarn
+    when:
+      branch:
+        - staging-*
+
+  - name: build:staging
+    image: plugins/gcr
+    settings:
+      registry: asia-southeast1-docker.pkg.dev
+      repo: asia-southeast1-docker.pkg.dev/fjob-dev/fjob-dev/fjob-frontend
+      tags:
+        - latest
+        - ${DRONE_COMMIT}
+      json_key:
+        from_secret: GCR_KEY_DEV
+    volumes:
+      - name: docker
+        path: /var/lib/docker
+      - name: dhost
+        path: /var/run/docker.sock
+    when:
+      branch:
+        - staging-*
+
+  - name: build:release
+    image: plugins/gcr
+    settings:
+      registry: asia-southeast1-docker.pkg.dev
+      repo: asia-southeast1-docker.pkg.dev/fjob-prod-330208/fjob-registry/fjob-frontend
+      tags:
+        - latest
+        - ${DRONE_COMMIT}
+      json_key:
+        from_secret: GCR_KEY
+    volumes:
+      - name: docker
+        path: /var/lib/docker
+      - name: dhost
+        path: /var/run/docker.sock
+    when:
+      branch:
+        - release/*
+
+  - name: deploy:staging
+    image: registry.fjob.com.vn/fjob-k8s:latest
+    settings:
+      secret_key:
+        from_secret: GKE_SECRET_KEY
+      user: drone-fjob-com-vn
+      project_id: fjob-dev
+    commands:
+      - echo $PLUGIN_SECRET_KEY > gsa-key.json
+      - gcloud auth activate-service-account $PLUGIN_USER@$PLUGIN_PROJECT_ID.iam.gserviceaccount.com --key-file=gsa-key.json
+      - gcloud container clusters get-credentials fjob-staging --zone asia-southeast1-a --project fjob-dev
+      - kubectl cluster-info
+      - helm upgrade --install fjob-frontend /app/charts/common-api-service -n fjob -f /app/services/fjob-frontend/values.yaml --set image.repository=asia-southeast1-docker.pkg.dev/fjob-dev/fjob-dev/fjob-frontend --set image.tag=${DRONE_COMMIT}
+      # - helm upgrade --install fjob-api-service /app/charts/common-api-service -n fjob -f /app/services/fjob-api-service/values.yaml --set image.repository=asia-southeast1-docker.pkg.dev/fjob-dev/fjob-dev/fjob-api --set image.tag=${DRONE_COMMIT}
+    when:
+      branch:
+        - staging-*
+
+volumes:
+  - name: cache
+    host:
+      path: /var/cache
+  - name: docker
+    host:
+      path: /var/cache/${DRONE_REPO}/docker
+  - name: dhost
+    host:
+      path: /var/run/docker.sock
+  - name: yarn
+    host:
+      path: /var/cache/${DRONE_REPO}/yarn
+
+trigger:
+  branch:
+    - staging-*
+    - release/*
+  event:
+    exclude:
+      - pull_request
+image_pull_secrets:
+  - dockerconfig

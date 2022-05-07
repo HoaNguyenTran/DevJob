@@ -1,0 +1,56 @@
+.item_label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 0.75rem;
+}
+
+.account_address {
+  border-radius: 0.5rem;
+  border: 1px solid #ccc;
+  max-height: 20rem;
+  overflow: auto;
+  width: 100%;
+  padding: 1rem 0;
+  .account_address_item {
+    width: 100%;
+    margin: 0.5rem 0;
+    cursor: pointer;
+    > div {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.75rem 2rem;
+    }
+
+    .text {
+      flex: 1;
+    }
+    .action {
+      display: none;
+    }
+    :hover {
+      background-color: #eee;
+      .action {
+        display: flex;
+        gap: 1rem;
+      }
+    }
+  }
+}
+.account_address_btn {
+  button {
+    width: 10rem;
+    margin: 0 auto;
+    padding: 0.5rem 0;
+    background-color: var(--secondary-color);
+    color: var(--white-color);
+    border: 1px solid var(--secondary-color);
+    border-radius: var(--border-radius);
+  }
+}
+.address_label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4rem;
+}

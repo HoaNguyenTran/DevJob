@@ -1,0 +1,104 @@
+.enterprise {
+  .enterprise_wrap {
+    margin: 0 auto;
+    padding: 3rem 0;
+    max-width: 1140px;
+    min-height: calc(100vh - 5rem);
+  }
+  .enterprise_back {
+    display: inline-block;
+    cursor: pointer;
+    margin: 0 0 1rem;
+    font-weight: 500;
+  }
+  .enterprise_header {
+    background-color: var(--white-color);
+    border-radius: var(--border-radius);
+    position: relative;
+    height: 20rem;
+    .header_inner {
+      height: 13.5rem;
+      background: url("/assets/images/banners/company.png") no-repeat bottom center;
+      border-top-left-radius: var(--border-radius);
+      border-top-right-radius: var(--border-radius);
+    }
+    .header_title {
+      padding: 3rem;
+      font-size: 1.25rem;
+      color: var(--white-color);
+      font-weight: 500;
+    }
+    .header_main {
+      position: absolute;
+      bottom: 2rem;
+      left: 3rem;
+      display: flex;
+      gap: 2rem;
+
+      .header_avatar {
+        img {
+          width: 8.5rem;
+          border: 1px dotted var(--secondary-color);
+          border-radius: 50%;
+        }
+      }
+
+      .info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        .name {
+          font-size: 1.5rem;
+          font-weight: 600;
+          color: var(--white-color);
+        }
+        .shortName {
+          height: 1.5rem;
+          color: #888;
+        }
+        .verify {
+          display: flex;
+          gap: 0.25rem;
+          align-items: center;
+        }
+      }
+    }
+  }
+
+  .enterprise_tab {
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    background-color: #efe5fd;
+    border-radius: var(--border-radius);
+
+    height: 3.5rem;
+    // margin: 0 2rem;
+    position: relative;
+
+    .enterprise_overlay {
+      margin: 0 0.5rem;
+      height: 2.5rem;
+      width: 40rem;
+      background-color: white;
+      border-radius: var(--border-radius);
+      display: inline-block;
+      position: absolute;
+      transition: transform 0.5s ease-in-out;
+    }
+
+    .tab_tab {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 1rem;
+      cursor: pointer;
+      span {
+        color: #6e00c2;
+        font-size: 1.125rem;
+        z-index: 1;
+      }
+    }
+  }
+}

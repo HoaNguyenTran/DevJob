@@ -1,0 +1,31 @@
+.topER {
+  width: 100%;
+  background-color: var(--white-color);
+  .topER_wrap {
+    max-width: 1380px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+    .topER_title {
+      text-transform: uppercase;
+      text-align: center;
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--primary-color);
+      margin-bottom: 1rem;
+    }
+    .brand {
+      width: 200px;
+      height: 8rem;
+      padding: 0.5rem;
+      .inner {
+        width: 100%;
+        height: 100%;
+        border: 1px solid var(--border-color);
+        border-radius: var(--border-radius);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+}

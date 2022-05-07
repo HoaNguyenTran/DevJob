@@ -1,0 +1,41 @@
+.homepage {
+  .homepage_wrap {
+    .homepage_slider {
+      width: 100%;
+      background-color: #faf7fd;
+      .slider_wrap {
+        max-width: 1380px;
+        margin: 0 auto;
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .homepage {
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .homepage {
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .homepage {
+  }
+}
+@media screen and (max-width: 576px) {
+  .homepage {
+    .homepage_wrap {
+      .homepage_slider {
+        .slider_wrap {
+          padding: 0 0.5rem;
+        }
+      }
+    }
+  }
+}

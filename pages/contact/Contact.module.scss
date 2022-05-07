@@ -1,0 +1,98 @@
+.contact {
+  padding: 1.5rem 0;
+  background-color: var(--white-color);
+  &_wrap {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 1rem 4rem;
+
+    .breadcrumb {
+      margin: 1rem 0;
+    }
+
+    .banner {
+      img {
+        width: 100%;
+        position: relative;
+        object-fit: cover;
+      }
+    }
+    .main {
+      .information {
+        .inner {
+          margin: 1rem;
+          .title {
+            color: var(--primary-color);
+            font-size: 24px;
+            font-weight: 600;
+          }
+          .item {
+            display: flex;
+            gap: 1rem;
+            margin: 1rem 0;
+            a {
+              color: var(--black-color);
+            }
+          }
+          .image {
+            margin-top: 6rem;
+            img {
+              max-width: 100%;
+              // max-width: 80vw;
+              margin: 0 auto;
+            }
+          }
+        }
+      }
+      .help {
+        background-color: #f9f9f9;
+        .inner {
+          margin: 2rem;
+          .title {
+            color: var(--primary-color);
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 1rem;
+          }
+          .button {
+            height: 2.5rem;
+            // width: 6rem;
+            border-radius: var(--border-radius);
+          }
+        }
+      }
+    }
+    .hotline {
+      .inner {
+        .header {
+          text-align: center;
+          width: 100%;
+          font-size: 20px;
+          text-transform: uppercase;
+          font-weight: 600;
+          margin: 5rem 0 1rem;
+        }
+        .main {
+          background-color: var(--bg-color);
+          display: flex;
+          justify-content: space-around;
+          padding: 1rem;
+          border-radius: var(--border-radius);
+
+          .advise,
+          .complain {
+            margin: 1rem 0;
+            .title {
+              font-weight: 500;
+              margin-bottom: 1rem;
+            }
+            .value {
+              display: flex;
+              gap: 0.5rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}

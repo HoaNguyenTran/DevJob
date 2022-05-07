@@ -1,0 +1,212 @@
+.verticle_group_list {
+ 
+  .container {
+    border-radius: 10px;
+    margin: auto;
+    padding: 12px 20px;
+    .group_list {
+      
+      max-height: 710px;
+      overflow: auto;
+      .item {
+        background-color: white;
+        cursor: pointer;
+        padding: 9px 15px;
+        border-radius: 10px;
+        box-shadow: inset 0 -0.4px 0 0 #d6d6d6;
+        &:hover {
+          background-color: #e7e7e7;
+        }
+        margin-top: 10px;
+      }
+      .item_active {
+        border: 1px solid var(--primary-color);
+      }
+
+     
+    }
+    .user_list {
+      max-height: 710px;
+      overflow: auto;
+      width: 95%;
+      margin: auto;
+      background-color: white;
+      border-radius: 10px;
+      .candi {
+        border-radius: 10px;
+        font-size: 14px;
+        // max-width: 558px;
+        background-color: var(--white-color);
+        position: relative;
+        padding: 16px;
+        margin-bottom: 1.5rem;
+        border: solid 1px #e7e7e7;
+        &:hover {
+          box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.2);
+        }
+    
+       .title {
+          display: flex;
+          align-items: center;
+          gap: 1rem;
+          cursor: pointer;
+          &:hover {
+            .name {
+              text-decoration: underline;
+            }
+          }
+        }
+    
+        .avt {
+          border-radius: 50%;
+          border: 1px solid var(--gray-color);
+        }
+        .name {
+          color: var(--primary-color);
+          font-size: 15px;
+          font-weight: bold;
+        }
+    
+        .main {
+          display: flex;
+          justify-content: space-between;
+          background-color: var(--white-color);
+        }
+    
+        .information {
+          padding: 1rem 0;
+        }
+    
+        .info {
+          display: flex;
+          gap: 0.5rem;
+          height: 2rem;
+    
+          div:not(:last-child) {
+            border-right: 1px solid var(--border-color);
+          }
+    
+          img {
+            width: 1rem;
+            height: 1rem;
+            margin-bottom: 0.25rem;
+            margin-right: 0.25rem;
+          }
+          .age,
+          .gender {
+            display: flex;
+            align-items: center;
+            gap: 0.25rem;
+            padding-right: 0.5rem;
+          }
+        }
+    
+        .header {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
+    
+        .item {
+          line-height: 2;
+          img {
+            width: 1rem;
+            height: 1rem;
+            margin-bottom: 0.25rem;
+            margin-bottom: 0.25rem;
+          }
+          span {
+            font-weight: 500;
+            padding: 0.5rem;
+          }
+          .tag {
+            border: 1px solid var(--gray-color);
+            border-radius: 12px;
+            font-weight: normal;
+          }
+        }
+        .btn_contact {
+          width: 100%;
+          text-align: center;
+          font-size: 14px;
+          color: white;
+          background-color: #d6d6d6;
+          border: 0;
+          height: 38px;
+          font-weight: bold;
+          border-radius: 6px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-top: 30px;
+          img {
+            margin-right: 10px;
+          }
+        }
+        .icon {
+          margin-right: 2.5rem;
+          cursor: pointer;
+          img {
+            width: 1.5rem;
+            height: 1.5rem;
+          }
+        }
+        .progress {
+          max-width: 70px;
+          min-width: 70px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          gap: 0.5rem;
+          span {
+            font-size: 14px;
+            text-align: center;
+            color: var(--secondary-color);
+          }
+        }
+        .action {
+          display: flex;
+          justify-content: space-between;
+    
+          button {
+            max-width: 115px;
+            font-weight: 500;
+            // margin-right: 1rem;
+            width: 8rem;
+            height: 2.5rem;
+            border: none;
+            border-radius: var(--border-radius);
+            font-weight: bold;
+          }
+          .review {
+            button {
+              color: var(--secondary-color);
+            }
+          }
+          .accept {
+            button {
+              color: var(--primary-color);
+            }
+          }
+          .reject {
+            button {
+              color: var(--red-color);
+            }
+          }
+          .contact {
+            button {
+              color: var(--green-color);
+            }
+          }
+          .view {
+            button {
+              color: var(--black-color);
+            }
+          }
+        }
+      }
+    }
+  }
+
+}

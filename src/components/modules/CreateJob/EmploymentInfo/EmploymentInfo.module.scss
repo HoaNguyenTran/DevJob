@@ -1,0 +1,130 @@
+.employmentInfo {
+  &_jobType,
+  &_workAddress,
+  &_workCalendar,
+  &_gender,
+  &_experienceJob {
+    display: flex;
+  }
+  &_address {
+    &_form {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: -0.5rem 0 1rem;
+      input {
+        margin-right: 1rem;
+        flex: auto;
+      }
+    }
+    &_add {
+      flex: none;
+      padding: 0.5rem 1rem;
+      border-radius: var(--border-radius);
+      display: block;
+      cursor: pointer;
+      color: var(--white-color);
+      background-color: var(--primary-color);
+      border: none;
+    }
+  }
+
+  &_salary {
+    display: flex;
+    &_deal,
+    &_range {
+      display: flex;
+      gap: 1rem;
+      // justify-content: flex-start;
+      align-items: flex-start;
+      &_unit {
+        margin-top: 0.5rem;
+      }
+    }
+    &_range {
+      display: flex;
+      gap: 1rem;
+      &_item {
+        gap: 1rem;
+        display: flex;
+        // align-items: center;
+        // >div {
+        //   margin-top: .5rem;
+        // }
+      }
+      &_title {
+        margin-top: 0.5rem;
+      }
+    }
+  }
+
+  &_age {
+    display: flex;
+    &_list {
+      display: flex;
+      gap: 1rem;
+    }
+    &_text {
+      margin-top: 0.5rem;
+    }
+  }
+
+  &_workAddress {
+    &_dropdown_hide {
+      display: none !important;
+      background-color: red !important;
+    }
+  }
+}
+
+.section_form_hiring {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: inset 0 -1px 0 0 #d6d6d6;
+  .header {
+    font-size: 18px;
+    border-bottom: 1px solid #d6d6d6;
+    color: var(--primary-color);
+    font-weight: 500;
+    padding: 10px 50px;
+  }
+  .content_wrap {
+    padding: 10px 50px;
+    .title {
+      font-weight: 500;
+      margin-bottom: 10px;
+      .note_title {
+        color: var(--gray-color);
+        font-style: italic;
+        color: #b5b5b5;
+      }
+      .textRequired {
+        color: #e6161a;
+        margin-left: 5px;
+      }
+    }
+    .hiring_upload {
+      border: 1px dashed #d9d9d9;
+      .title_video {
+        font-size: 16px;
+      }
+      .description {
+        margin-bottom: 10px;
+        color: #b5b5b5;
+      }
+    }
+  }
+}
+
+@media screen and(max-width: 576px) {
+  .section_form_hiring {
+    .header {
+      padding: 10px 2rem;
+    }
+    .content_wrap {
+      padding: 10px 2rem;
+    }
+  }
+}

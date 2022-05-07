@@ -1,0 +1,133 @@
+.layout {
+  background-color: var(--bg-color);
+  min-height: calc(100vh - 5rem);
+  // overflow: hidden;
+
+  .layout_wrap {
+    // display: flex;
+  }
+
+  .layout_sidebar {
+    overflow-y: auto;
+    top: 0;
+    bottom: 0;
+    width: 20rem;
+    position: fixed;
+    top: 5rem;
+    left: 0;
+    overflow-x: hidden;
+    padding: 0 1rem;
+    background-color: var(--white-color);
+    border-right: 1px solid var(--border-color);
+
+    .list {
+      border-radius: var(--border-radius);
+      overflow: hidden;
+      margin: 1rem 0;
+
+      &:hover {
+        border-radius: var(--border-radius);
+      }
+    }
+
+    .item,
+    .item_active {
+      cursor: pointer;
+      padding: 0.5rem;
+      border-bottom: 1px solid var(--gray-color);
+      background-color: var(--bg-color);
+
+      &:hover {
+        background-color: #efe5ff;
+      }
+
+      a,
+      .popup {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        justify-content: space-between;
+        color: var(--black-color);
+        font-weight: 500;
+        img {
+          margin-right: 0.25rem;
+        }
+        .text {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+
+      &:hover {
+        a,
+        .popup {
+          color: var(--primary-color);
+        }
+      }
+
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+
+    .item_active {
+      background-color: #efe5ff;
+      a,
+      .popup {
+        color: var(--primary-color);
+      }
+    }
+  }
+
+  .layout_content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20rem;
+    max-width: calc(100vw - 20rem);
+    
+    .content_inner {
+      height: calc(100vh - 5rem);
+      width: 100%;
+      overflow-x: auto;
+    }
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .layout {
+    .layout_sidebar {
+      width: 16rem;
+      padding: 0 0.5rem;
+      .list {
+        margin: 0.5rem 0;
+      }
+      .item {
+
+      }
+    }
+    .layout_content {
+      margin-left: 16rem;
+      max-width: calc(100vw - 16rem);
+      .content_inner {
+        // overflow: hidden;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .layout {
+    .layout_sidebar {
+      display: none;
+    }
+    .layout_content {
+      margin-left: 0;
+      max-width: 100vw;
+      .content_inner {
+        // overflow: hidden;
+      }
+    }
+  }
+}

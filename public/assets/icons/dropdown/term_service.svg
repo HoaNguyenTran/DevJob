@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="chinhsachbaomat" transform="translate(6414 7511)">
+    <rect id="Rectangle_148689" data-name="Rectangle 148689" width="24" height="24" transform="translate(-6414 -7511)" fill="#fff" opacity="0"/>
+    <g id="Group_14253" data-name="Group 14253" transform="translate(-6410.691 -7508.6)">
+      <path id="Path_18257" data-name="Path 18257" d="M1293.2-695.759c-1.151,0-1.059,1.383-2.068,2.31-1.107,1.017-2.266.84-2.266,1.949v2.512c0,5.624,4.2,11.033,8.691,12.43,4.491-1.4,8.691-6.805,8.691-12.43V-691.5c0-1.109-1.159-.931-2.267-1.949-1.009-.927-.917-2.31-2.068-2.31Z" transform="translate(-1288.866 695.759)" fill="none" stroke="#858585" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2" fill-rule="evenodd"/>
+      <path id="Path_18258" data-name="Path 18258" d="M1322.979-647.928h4.861a.958.958,0,0,1,.955.955v3.467a2.052,2.052,0,0,1-2.046,2.046h-2.678a2.052,2.052,0,0,1-2.046-2.046v-3.467A.958.958,0,0,1,1322.979-647.928Z" transform="translate(-1316.719 655.581)" fill="none" stroke="#858585" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2" fill-rule="evenodd"/>
+      <path id="Path_18259" data-name="Path 18259" d="M1331.476-669.6h3.746v-2.256a1.878,1.878,0,0,0-1.873-1.873h0a1.878,1.878,0,0,0-1.873,1.873Z" transform="translate(-1324.658 677.256)" fill="none" stroke="#858585" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2" fill-rule="evenodd"/>
+      <line id="Line_596" data-name="Line 596" y2="1.61" transform="translate(8.691 10.172)" fill="none" stroke="#858585" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"/>
+    </g>
+  </g>
+</svg>

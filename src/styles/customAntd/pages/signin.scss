@@ -1,0 +1,12 @@
+.signin {
+  .ant-form-item-control-input-content {
+    > input {
+      padding: 0.5rem 0.5rem 0.5rem 2.5rem;
+      border-radius: 7px;
+    }
+  }
+  .ant-input-password {
+    padding: 8px 1rem 0.5rem 2.5rem;
+    border-radius: 7px;
+  }
+}

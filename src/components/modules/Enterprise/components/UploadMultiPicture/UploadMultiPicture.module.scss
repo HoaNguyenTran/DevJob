@@ -1,0 +1,31 @@
+.picture {
+  display: flex;
+  .image {
+    height: 10rem;
+    width: 8.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px dashed var(--border-color);
+  }
+}
+.modal_avatar {
+  text-align: center;
+
+  .upload {
+    display: flex;
+    justify-content: center;
+  }
+  
+  img {
+    width: 60%;
+  }
+  button {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    padding: 0.375rem 1.5rem;
+    border: 1px solid var(--primary-color);
+    border-radius: var(--border-radius);
+    margin-top: 2rem;
+  }
+}

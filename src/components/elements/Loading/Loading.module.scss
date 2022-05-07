@@ -1,0 +1,9 @@
+.loading {
+  position: relative;
+  width: 100%;
+  &_wrap {
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+  }
+}

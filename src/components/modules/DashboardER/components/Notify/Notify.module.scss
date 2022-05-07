@@ -1,0 +1,54 @@
+.notify {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  .global {
+    padding: .25rem;
+  }
+
+  .person,
+  .global {
+    width: 100%;
+    .message {
+      font-weight: 600;
+      margin: 0.5rem 0.5rem 0;
+    }
+    .content {
+      height: 12rem;
+      overflow-y: auto;
+
+      .item {
+        padding: 0.5rem;
+        border-bottom: 1px solid var(--border-color);
+      }
+      .title {
+        font-weight: 500;
+      }
+      .time {
+        font-style: italic;
+      }
+
+      .empty {
+        margin: 0.5rem;
+        font-style: italic;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .notify {
+    .person,
+    .global {
+      .message {
+        font-weight: 600;
+        margin: 0;
+      }
+      .content {
+        .item {
+          padding: 0.5rem 0 0 0.25rem;
+        }
+      }
+    }
+  }
+}

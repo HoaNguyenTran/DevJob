@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="113" height="113" viewBox="0 0 113 113">
+  <g id="Group_27699" data-name="Group 27699" transform="translate(-871.202 -175.202)">
+    <g id="Ellipse_2" data-name="Ellipse 2" transform="translate(871.202 175.202)" fill="none" stroke="#ff8500" stroke-width="4">
+      <circle cx="56.5" cy="56.5" r="56.5" stroke="none"/>
+      <circle cx="56.5" cy="56.5" r="54.5" fill="none"/>
+    </g>
+    <g id="Group_12804" data-name="Group 12804" transform="translate(694.553 -162.797)">
+      <path id="Path_13883" data-name="Path 13883" d="M1049.661,253.212V231.585c-18.891,0-29.141-10.224-29.141-10.224s-10.251,10.224-29.141,10.224v21.627s-1.13,27.38,29.141,39.334C1050.791,280.592,1049.661,253.212,1049.661,253.212Z" transform="translate(-787.725 137.639)" fill="#ff8500"/>
+      <path id="Union_68" data-name="Union 68" d="M.79,36.035A3.15,3.15,0,1,1,3.944,39.18,3.141,3.141,0,0,1,.79,36.035ZM.712,26.063,0,3.362A3.279,3.279,0,0,1,3.268,0H4.611a3.257,3.257,0,0,1,3.24,3.336L7.227,26.063a3.26,3.26,0,0,1-6.516,0Z" transform="translate(229.395 374.877)" fill="#fff" stroke="rgba(0,0,0,0)" stroke-miterlimit="10" stroke-width="1"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,54 @@
+.map {
+  &_company {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+  }
+  &_header {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 0.5rem;
+    &_input {
+      flex: 1;
+      padding: 0.5rem;
+      border: 1px solid #505050;
+      border-radius: var(--border-radius);
+    }
+    &_btn {
+      cursor: pointer;
+      padding: 0 1.5rem;
+      border-radius: var(--border-radius);
+      background-color: var(--secondary-color);
+      border: 1px solid var(--secondary-color);
+      color: var(--white-color);
+    }
+  }
+  &_main {
+    &_list {
+      margin-bottom: 1rem;
+    }
+    &_item {
+      margin: 1rem;
+      &:hover {
+        text-decoration: underline;
+        cursor: default;
+        color: var(--primary-color);
+      }
+    }
+  }
+  &_btn {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 1rem;
+    width: 100%;
+    justify-content: space-between;
+    button {
+      padding: 0.5rem 2rem;
+      border-radius: var(--border-radius);
+      background-color: var(--primary-color);
+      border: 1px solid var(--primary-color);
+      color: var(--white-color);
+    }
+  }
+}

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36">
+  <g id="napkimcuong" transform="translate(-12 -412)">
+    <rect id="Rectangle_148950" data-name="Rectangle 148950" width="36" height="36" rx="18" transform="translate(12 412)" fill="none"/>
+    <g id="Group_14255" data-name="Group 14255" transform="translate(20.4 423.785)">
+      <path id="Path_18262" data-name="Path 18262" d="M1004.781-814.671l-9.6-10.844,2.6-5.584h14l2.6,5.584Z" transform="translate(-995.181 831.099)" fill="none" stroke="#858585" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2" fill-rule="evenodd"/>
+      <line id="Line_605" data-name="Line 605" x2="19.2" transform="translate(0 5.584)" fill="none" stroke="#858585" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"/>
+      <path id="Path_18263" data-name="Path 18263" d="M1018.419-814.671l-4.083-10.844-2.919-5.584h14l-2.919,5.584Z" transform="translate(-1008.819 831.099)" fill="none" stroke="#858585" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2" fill-rule="evenodd"/>
+      <line id="Line_606" data-name="Line 606" y1="5.584" x2="4.083" transform="translate(5.517 0)" fill="none" stroke="#858585" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"/>
+      <line id="Line_607" data-name="Line 607" x1="4.083" y1="5.584" transform="translate(9.6 0)" fill="none" stroke="#858585" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"/>
+    </g>
+  </g>
+</svg>

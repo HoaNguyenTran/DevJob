@@ -1,0 +1,64 @@
+.notification {
+  .circleNoti {
+    background-color: #8f30d6;
+    padding: 5px;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+  } 
+  .badge-notification sup {
+    top: 4px !important;
+    right: 4px !important;
+  }
+
+  .title_box {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  
+    .box {
+      margin: 0px 5px;
+      border-radius: 100px;
+      padding: 5px 10px;
+      border: 1px solid #FF8500;
+      font-size: 0.9rem;
+      font-weight: normal;
+      color: #FF8500;
+    }
+  }
+}
+.unreadNotification {
+  font-weight: bold;
+}
+.options {
+  font-size: 18px;
+  padding: 3px;
+  :hover {
+    color: white;
+    background: var(--secondary-color);
+    border-radius: 50%;
+  }
+}
+.formatString {
+  max-height: 4.4rem;
+  overflow: hidden;
+  display: block;
+  -webkit-line-clamp: 2;
+  display: flexbox;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  white-space: normal;
+}
+.settings {
+  display: block;
+  :hover {
+    color: var(--secondary-color);
+    // transition: 0.9s;
+    // transform: rotateX(360deg);
+  }
+}

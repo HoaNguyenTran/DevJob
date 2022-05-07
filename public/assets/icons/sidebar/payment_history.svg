@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36">
+  <g id="lichsugiaodich" transform="translate(-12 -562)">
+    <rect id="Rectangle_148953" data-name="Rectangle 148953" width="36" height="36" rx="18" transform="translate(12 562)" fill="none"/>
+    <g id="Group_14262" data-name="Group 14262" transform="translate(21.078 570.401)">
+      <path id="Path_18277" data-name="Path 18277" d="M1163.874-835.374l-4.053-.4.851-3.983" transform="translate(-1157.196 839.759)" fill="none" stroke="#858585" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2" fill-rule="evenodd"/>
+      <path id="Path_18278" data-name="Path 18278" d="M1146.031-828.674l.006-.005a8.9,8.9,0,0,1,6.3-2.608,8.922,8.922,0,0,1,8.922,8.922,8.922,8.922,0,0,1-8.922,8.922,8.922,8.922,0,0,1-8.922-8.922" transform="translate(-1143.418 832.643)" fill="none" stroke="#858585" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2" fill-rule="evenodd"/>
+      <g id="Group_14261" data-name="Group 14261" transform="translate(6.674 6.94)">
+        <path id="Path_18279" data-name="Path 18279" d="M1187.378-775.524c1.242,0,2.248.747,2.248,1.669s-1.007,1.669-2.248,1.669-2.248-.747-2.248-1.669" transform="translate(-1185.13 778.862)" fill="none" stroke="#858585" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2" fill-rule="evenodd"/>
+        <path id="Path_18280" data-name="Path 18280" d="M1187.378-793.046c-1.242,0-2.248-.747-2.248-1.669s1.007-1.669,2.248-1.669,2.248.747,2.248,1.669" transform="translate(-1185.13 796.383)" fill="none" stroke="#858585" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2" fill-rule="evenodd"/>
+      </g>
+      <line id="Line_616" data-name="Line 616" y2="9.567" transform="translate(8.922 5.494)" fill="none" stroke="#858585" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"/>
+    </g>
+  </g>
+</svg>

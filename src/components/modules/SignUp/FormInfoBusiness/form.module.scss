@@ -1,0 +1,43 @@
+.info {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  &_img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  &_address {
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px solid #ccc !important;
+    &_exist {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+    &_addnew {
+      color: #6e00c2;
+    }
+    &_addnew:hover {
+      cursor: pointer;
+    }
+  }
+}
+.btn {
+  width: 620px;
+  height: 44px;
+  margin: 45px 0 0;
+  padding: 12px 280.1px 13px 281.9px;
+  border-radius: 10px;
+  background-color: var(--primary-color);
+}
+.form {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}

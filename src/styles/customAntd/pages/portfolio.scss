@@ -1,0 +1,58 @@
+.portfolio {
+  .ant-select-show-search.ant-select:not(.ant-select-customize-input) .ant-select-selector {
+    border-radius: 7px !important;
+  }
+  .ant-upload-list-item,
+  .ant-upload-list-item-done,
+  .ant-upload-list-item-list-type-text {
+    display: none;
+  }
+  .ant-radio-wrapper {
+    width: 220px !important;
+  }
+  .ant-select-selector {
+    min-width: 220px !important;
+  }
+
+  .ant-select:not(.ant-select-customize-input) .ant-select-selector {
+    border-radius: 7px;
+  }
+
+  .ant-select-single:not(.ant-select-customize-input) .ant-select-selector {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+    border-radius: 7px;
+  }
+
+  
+}
+
+.portfolio_salary {
+  .ant-select-selector {
+    min-width: 140px;
+  }
+
+  .ant-select-single:not(.ant-select-customize-input) .ant-select-selector {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+    border-radius: 7px;
+  }
+
+  .ant-input-number {
+    height: 40px;
+    width: 110px;
+    display: flex;
+    align-items: center;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+    text-align: right;
+  }
+
+  .ant-form-item {
+    margin-bottom: 0;
+  }
+}

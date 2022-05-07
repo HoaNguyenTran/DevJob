@@ -1,0 +1,166 @@
+.account {
+  width: 100%;
+  padding: 3rem 1rem;
+  .account_wrap {
+    max-width: 1140px;
+    margin: 0 auto;
+    border-radius: var(--border-2x-radius);
+    background-color: var(--white-color);
+    padding: 4rem;
+
+    .btn_address {
+      width: 100%;
+      height: 44px;
+      margin: 15px 0 40px;
+      border-radius: 6px;
+      border: solid 1px var(--primary-color);
+      background-color: rgba(255, 255, 255, 0);
+      .text {
+        color: var(--primary-color);
+      }
+    }
+  }
+
+  .verifyEmail {
+    display: flex;
+    justify-content: space-between;
+
+    .unVerify {
+      color: var(--red-color);
+      font-style: italic;
+    }
+    .verified {
+      color: var(--green-color);
+      font-style: italic;
+    }
+  }
+
+  .account_title {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--primary-color);
+  }
+
+  .account_avatar {
+    position: relative;
+    .account_avatar_icon {
+      position: absolute;
+      bottom: 1.5rem;
+      right: 0;
+    }
+  }
+
+  .account_form {
+    .header {
+      margin-left: 2rem;
+    }
+    .item_label {
+      font-weight: bold;
+      display: block;
+      margin-bottom: 0.75rem;
+    }
+    .verify {
+      margin-top: 1rem;
+    }
+    .avatar {
+      width: 8rem;
+      border: 1px dashed var(--secondary-color);
+      border-radius: 50%;
+    }
+    .item_value {
+      border-radius: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border: 1px solid var(--border-color);
+      height: 40px;
+      padding: 0 11px;
+      cursor: default;
+      margin-bottom: 24px;
+    }
+  }
+
+  .account_address {
+    border-radius: 0.5rem;
+    border: 1px solid #ccc;
+    max-height: 30rem;
+    overflow: auto;
+    width: 100%;
+    padding: 1rem 0;
+    .account_address_item {
+      width: 100%;
+      margin: 0.5rem 0;
+      cursor: pointer;
+      > div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.75rem 2rem;
+      }
+      .text {
+        flex: 1;
+      }
+      :hover {
+        background-color: #eee;
+        .action {
+          display: flex;
+          gap: 1rem;
+        }
+      }
+      .action {
+        display: none;
+      }
+    }
+  }
+
+  .account_action {
+    margin-top: 2rem;
+    button {
+      background-color: var(--primary-color);
+      width: 10rem;
+      padding: 0.5rem 0;
+      border-radius: var(--border-radius);
+      border: 1px solid var(--primary-color);
+      color: var(--white-color);
+    }
+  }
+
+  .btn_submit {
+    height: 50px;
+    width: 200px;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--primary-color);
+  }
+
+  .btn_next {
+    padding: 0.75rem 2rem;
+    margin-bottom: 1rem;
+    background-color: var(--secondary-color);
+    border-radius: var(--border-radius);
+    border: 1px solid var(--secondary-color);
+    color: var(--white-color);
+  }
+  .text_input {
+    width: 100%;
+  }
+  .phoneNumber,
+  .email {
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid var(--border-color);
+    height: 40px;
+    padding: 0 11px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .account {
+    padding: 3rem 0.5rem;
+    .account_wrap {
+      padding: 1rem;
+    }
+  }
+}

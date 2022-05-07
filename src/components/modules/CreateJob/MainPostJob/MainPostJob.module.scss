@@ -1,0 +1,29 @@
+.hiring {
+  width: 100%;
+  min-height: 100vh;
+  .hiring_wrap {
+    max-width: 1140px;
+    margin: 0rem auto;
+    .stepList {
+      padding: 30px 40px;
+    }
+  }
+  .hiring_card {
+    background-color: var(--bg-color);
+    &_extra {
+      span {
+        color: var(--secondary-color);
+      }
+    }
+  }
+}
+
+@media screen and(max-width: 576px) {
+  .hiring {
+    .hiring_wrap {
+      .stepList {
+        padding: 2rem;
+      }
+    }
+  }
+}

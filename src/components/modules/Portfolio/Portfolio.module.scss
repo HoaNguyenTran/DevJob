@@ -1,0 +1,65 @@
+.portfolio {
+  min-height: 100vh;
+  padding: 3rem 0.5rem;
+  max-width: 1140px;
+  margin: 0 auto;
+
+  .portfolio_tab {
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    background-color: #efe5fd;
+    border-radius: var(--border-radius);
+
+    height: 3.5rem;
+    position: relative;
+
+    .portfolio_overlay {
+      margin: 0 0.5rem;
+      height: 2.5rem;
+      background-color: white;
+      border-radius: var(--border-radius);
+      display: inline-block;
+      position: absolute;
+      transition: transform 0.25s ease-in-out;
+    }
+
+    .tab_tab {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 1rem;
+      cursor: pointer;
+      span {
+        color: #6e00c2;
+        font-size: 1.125rem;
+        z-index: 1;
+      }
+    }
+  }
+
+  .portfolio_btn {
+    text-align: center;
+    button {
+      background-color: var(--primary-color);
+      border-radius: var(--border-radius);
+      border: 1px solid var(--primary-color);
+      color: var(--white-color);
+      height: 3rem;
+      padding: 0 2rem;
+      margin-top: 2rem;
+    }
+  }
+
+  .btn_next {
+    text-align: center;
+    button {
+      padding: 0.375rem 1.5rem;
+      border: 1px solid var(--secondary-color);
+      background-color: var(--secondary-color);
+      color: var(--white-color);
+      border-radius: var(--border-radius);
+    }
+  }
+}

@@ -1,0 +1,18 @@
+.slider {
+  cursor: pointer;
+  background-color: #faf7fd;
+  padding: 0 1rem;
+  .slider_wrap {
+    max-width: 1380px;
+    margin: 0 auto;
+    .slider {
+      padding: 0 .5rem;
+      .item {
+        // width: 100%;
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

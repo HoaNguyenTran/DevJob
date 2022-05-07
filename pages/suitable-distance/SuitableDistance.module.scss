@@ -1,0 +1,89 @@
+.main {
+  min-height: calc(100vh - 5rem);
+  background-color: var(--bg-color);
+  .main_wrap {
+    max-width: 1140px;
+    margin: 30px auto 0 auto;
+    .main_wrap_header {
+      .main_wrap_header_title {
+        font-weight: bold;
+        margin: 10px 0;
+      }
+      .btn_search {
+        height: 44px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #FF8500;
+        color: white;
+        font-size: 16px;
+        border-radius: 10px;
+        cursor: pointer;
+        margin: 0 auto;
+      }
+      .btn_map {
+        height: 44px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #6E00C2;
+        color: white;
+        font-size: 16px;
+        border-radius: 10px;
+        cursor: pointer;
+        margin: 0 auto;
+      }
+      .address {
+        height: 44px;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 1rem;
+        background-color: white;
+        display: flex;
+        border-radius: 10px;
+        cursor: pointer;
+      }
+    }
+    .main_wrap_filter {
+      margin: 30px 0;
+      .main_wrap_filter_distance {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        align-items: center;
+        .main_wrap_filter_distance_select {
+          display: flex;
+          border: 1px solid #DEDEDE;
+          padding: 0.5rem 1rem;
+          align-items: center;
+          border-radius: .5rem;
+          background-color: white;
+          cursor: pointer;
+          .main_wrap_filter_distance_select_text {
+            font-size: 14px;
+            color: var(--primary-color);
+            margin-right: 2rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .job_header {
+    padding: 16px 24px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .job_main {
+    &_sidebar {
+      margin-top: 3rem;
+      padding-left: 0;
+    }
+    &_tag {
+      padding: 0 0.5rem;
+    }
+  }
+}

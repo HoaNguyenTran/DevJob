@@ -1,0 +1,32 @@
+.main {
+  &_title {
+    margin: 50px 0px;
+
+    font-size: 24px;
+    font-weight: bold;
+    
+    
+    line-height: 0.75;
+    
+    text-align: center;
+    color: var(--black-color);
+  }
+  &_text {
+    font-size: 1rem;
+    font-weight: normal;
+    
+    
+    line-height: 1.25;
+    
+    text-align: center;
+    color: var(--black-color);
+  }
+}
+.btn {
+  width: 100%;
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  border-radius: 10px;
+  margin-top: 20px;
+  height: 44px;
+}

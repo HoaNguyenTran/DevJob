@@ -1,0 +1,105 @@
+.findEE {
+  &_sidebar {
+    &_header {
+      display: flex;
+      justify-content: space-between;
+      
+    }
+    &_title {
+      font-weight: 500;
+      font-size: 18px;
+      color: var(--primary-color);
+      font-weight: bold;
+    }
+    &_card {
+      background-color: var(--white-color);
+      border: none;
+      border-radius: var(--border-radius);
+      border-bottom: 1px solid var(--gray-color);
+    }
+    &_salary {
+      &_top {
+        display: flex;
+      }
+      &_bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &_select {
+          display: flex;
+          height: 40px;
+          background-color: white;
+          align-items: center;
+          border-radius: 0.5rem;
+          overflow: hidden;
+          border: 1px solid #DEDEDE;
+          input {
+            text-align: right;
+            padding: 0 25px;
+          }
+          &_text {
+            background-color: #DEDEDE;
+            height: 100%;
+            width: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+        }
+      }
+    }
+    &_age {
+      position: relative;
+      &_bottom {
+        display: flex;
+        position: absolute;
+        right: 0;
+        bottom: -3px;
+        &_unit {
+          background-color: white;
+          display: flex;
+          height: 40px;
+          align-items: center;
+          border-radius: 0.5rem;
+          overflow: hidden;
+          margin-left: 10px;
+          border: 1px solid #DEDEDE;
+          input {
+            text-align: right;
+            padding: 0 25px;
+          }
+        }
+      }
+      &_unit {
+        background-color: #DEDEDE;
+        height: 100%;
+        width: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+    &_gender {
+      .gender {
+      max-width: 100px;
+      }
+    }
+    &_btn {
+      padding-top: 4rem;
+      button {
+        width: 100%;
+        height: 40px;
+        border: 1px solid var(--primary-color);
+        background-color: var(--primary-color);
+        color: var(--white-color);
+        border-radius: var(--border-radius);
+      }
+    }
+  }
+}
+
+
+.label {
+  font-weight: bold;
+  margin: 10px 0;
+}

@@ -1,0 +1,127 @@
+.experience {
+  max-width: 1140px;
+  margin: 0 1rem 1rem;
+  padding: 1rem;
+  background-color: var(--white-color);
+  .experience_header {
+    display: flex;
+    justify-content: space-between;
+    .experience_title {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      .title {
+        font-weight: 600;
+        font-size: 1.25rem;
+        text-transform: uppercase;
+      }
+      img {
+        width: 1rem;
+      }
+    }
+
+    .experience_add {
+      cursor: pointer;
+      padding: 0.375rem 1rem;
+      border: solid 1px var(--primary-color);
+      border-radius: var(--border-radius);
+      color: var(--primary-color);
+    }
+  }
+
+  .experience_status {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 2rem;
+  }
+
+  .experience_content {
+    // max-height: 600px;
+    overflow-y: auto;
+  }
+
+  .experience_item {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    border-bottom: 1px solid var(--border-color);
+    padding: 1.5rem 2rem;
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    background-color: var(--bg-color);
+    .img {
+      background-color: var(--white-color);
+      padding: 0.5rem;
+      border-radius: var(--border-2x-radius);
+    }
+
+    .content {
+      flex: 1;
+      .item {
+        font-weight: 500;
+        span {
+          font-weight: 400;
+        }
+      }
+    }
+    .option {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 3rem;
+      gap: 1.5rem;
+
+      .icon {
+        font-size: 20px;
+        cursor: pointer;
+        color: #b5b5b5;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .experience {
+    padding: 1rem;
+    .experience_header {
+      .experience_title {
+        .title {
+          font-size: 1.025rem;
+        }
+      }
+    }
+    .experience_item {
+      margin-top: 0.5rem;
+      gap: 1rem;
+      padding: 1rem;
+      .img {
+        background-color: var(--white-color);
+        padding: 0.25rem;
+        border-radius: var(--border-2x-radius);
+      }
+      .option {
+        width: auto;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .experience {
+    padding: 0.5rem;
+    .experience_header {
+      .experience_title {
+        .title {
+          font-size: 1.025rem;
+        }
+      }
+    }
+    .experience_item {
+      gap: 1rem;
+      padding: 1rem;
+    }
+  }
+}

@@ -1,0 +1,8 @@
+FROM node:14-alpine
+
+LABEL Maintainer="Hieupv <hieu.pv@zetagroup.vn>" \
+  Description="Lightweight container for nodejs application on Alpine Linux."
+
+WORKDIR /app
+
+CMD ["yarn", "dev"]

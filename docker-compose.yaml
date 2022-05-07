@@ -1,0 +1,29 @@
+version: '3.7'
+services:
+  fjob-frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    volumes:
+      - .:/app
+    networks:
+      - zeta_common
+  nginx:
+    image: nginx
+    volumes:
+      - ./.docker/nginx/templates:/etc/nginx/templates
+    ports:
+      - '8080:80'
+      - '8081:443'
+    environment:
+      - NGINX_PORT=80
+      - NGINX_SECURE_PORT=443
+    links:
+      - fjob-frontend
+    depends_on:
+      - fjob-frontend
+    networks:
+      - zeta_common
+networks:
+  zeta_common:
+    external: true

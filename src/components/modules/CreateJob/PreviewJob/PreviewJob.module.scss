@@ -1,0 +1,268 @@
+.previewJob {
+  textarea {
+    padding-left: 0 !important;
+  }
+
+  &_wrap {
+    padding: 2rem;
+  }
+  &_header {
+    border-bottom: 1px solid var(--border-color);
+    &_tag {
+      display: flex;
+      gap: 1.25rem;
+      align-items: center;
+      font-weight: 500;
+      &_hot {
+        color: var(--red-color);
+        img {
+          margin-bottom: 0.25rem;
+          width: 1rem;
+          height: 1rem;
+          margin-right: 0.25rem;
+        }
+      }
+      &_urgent {
+        color: var(--red-color);
+        img {
+          width: 1rem;
+          height: 1rem;
+          margin-right: 0.25rem;
+          margin-bottom: 0.25rem;
+        }
+      }
+    }
+    &_information {
+      margin: 2rem 0;
+      display: flex;
+      gap: 2rem;
+    }
+    &_avt {
+      img {
+        border-radius: 50%;
+        border: 1px solid var(--border-color);
+        overflow: hidden;
+      }
+    }
+    &_name {
+      font-weight: 500;
+      font-size: 1.125rem;
+    }
+    &_title {
+      font-weight: 600;
+      font-size: 20px;
+      margin: 2rem 1rem;
+      text-align: center;
+    }
+  }
+  &_information,
+  &_require,
+  &_desc,
+  &_img,
+  &_more,
+  &_benefit {
+    border-bottom: 1px solid var(--border-color);
+    padding: 1rem 0;
+    &_title {
+      margin: 1rem 0 0.5rem;
+      text-transform: uppercase;
+      font-weight: 500;
+    }
+    &_list {
+    }
+
+    &_location {
+      &_name {
+        font-weight: 500;
+        margin: 0 0.75rem;
+      }
+    }
+    &_item,
+    &_exp,
+    &_schedule {
+      display: flex;
+      line-height: 2;
+      gap: 0.75rem;
+      align-items: flex-start;
+      img {
+        margin-top: 0.5rem;
+        width: 1rem;
+        height: 1rem;
+      }
+      &_value {
+        margin-left: 2rem;
+      }
+    }
+    &_icon {
+      display: flex;
+    }
+    &_name {
+      font-weight: 500;
+    }
+
+    &_text {
+      margin-left: 2rem;
+    }
+    &_textarea {
+      pointer-events: none;
+    }
+
+    &_exp,
+    &_schedule {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+
+      &_title {
+        display: flex;
+        gap: 0.75rem;
+      }
+
+      &_name {
+        font-weight: 500;
+      }
+
+      &_value {
+        gap: 0;
+      }
+    }
+  }
+
+  &_img {
+    &_value {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    img {
+      width: 50%;
+      object-fit: cover;
+      max-height: 300px;
+    }
+  }
+
+  &_match {
+    text-align: center;
+    width: 100%;
+    border-bottom: 1px solid var(--border-color);
+    padding: 1rem 0;
+    &_wrap {
+      margin: 1rem auto;
+      width: 60%;
+    }
+    &_title {
+      font-weight: 500;
+    }
+    &_subtitle {
+      font-size: 14px;
+    }
+    &_progress {
+      padding: 1rem 0;
+    }
+  }
+  &_action {
+    margin: 2.5rem 0;
+    width: 60%;
+    display: flex;
+    gap: 1rem;
+    // button {
+    //   width: 100%;
+    //   border: none;
+    //   padding: 0.5rem 0;
+    //   background-color: var(--primary-color);
+    //   border-radius: var(--border-radius);
+    //   color: var(--white-color);
+    // }
+  }
+  &_post {
+    button {
+      background-color: var(--primary-color);
+      border-color: var(--primary-color);
+      border-radius: 7px;
+      height: auto;
+      padding: 0.5rem 1rem;
+    }
+
+   
+  }
+}
+.section_form_hiring {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: inset 0 -1px 0 0 #d6d6d6;
+  .header {
+    font-size: 18px;
+    border-bottom: 1px solid #d6d6d6;
+    color: var(--primary-color);
+    font-weight: 500;
+    padding: 10px 50px
+  }
+  .content_wrap {
+    padding: 10px 50px;
+    .title {
+      font-weight: 500;
+      margin-bottom: 10px;
+      .note_title {
+        color: var(--gray-color);
+        font-style: italic;
+        color: #b5b5b5;
+      }
+      .textRequired {
+        color: #e6161a;
+        margin-left: 5px;
+      }
+    }
+    .item_contact {
+      background-color: #f5f5f5;
+      border-radius: 6px;
+      padding: 10px 15px;
+    }
+    .hiring_upload {
+      border: 1px dashed #d9d9d9;
+      .title_video {
+        font-size: 16px;
+      }
+      .description {
+        margin-bottom: 10px;
+        color: #b5b5b5;
+      }
+    }
+  }
+}
+.btn_back_step {
+  background-color: var(--white-color) !important;
+  border-color: var(--primary-color) !important;
+  border-radius: 7px !important;
+  height: auto !important;
+  padding: 0.5rem 1rem !important;
+  color: var(--primary-color) !important;
+  // &:hover {
+  //   background-color: var(--primary-color) !important;
+  //   color: var(--white-color) !important;
+  // }
+}
+.button_post_job {
+  width: 140px;
+  padding: 0.75rem;
+  color: var(--white-color);
+  border-radius: var(--border-radius);
+  background-color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  cursor: pointer;
+}
+
+@media screen and(max-width: 576px) {
+  .section_form_hiring {
+    .header {
+      padding: .5rem 2rem;
+    }
+    .content_wrap {
+      padding: 7px;
+    }
+  }
+  .previewJob_wrap {
+      padding: .5rem;
+  }
+}

@@ -1,0 +1,80 @@
+.main {
+  min-height: calc(100vh - 5rem);
+  padding-top: 30px;
+  .main_wrap {
+    max-width: 1180px;
+    margin: 0px auto;
+    background: white;
+    padding: 100px 0 50px 0;
+    .main_wrap_image {
+      width: 100%;
+      img {
+        margin: 0 auto;
+        display: block;
+      }
+    }
+  }
+  .main_content {
+    .main_wrap_content {
+      text-align: center;
+      &_title {
+        margin-top: 1rem;
+        font-size: 1.5rem;
+        font-weight: bold;
+      }
+      &_input {
+        width: 311px;
+        border: 1px solid #D6D6D6;
+        border-radius: 1.5rem;
+        margin: 20px auto 80px auto;
+        height: 3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 1.5rem;
+      }
+      &_input::placeholder {
+        color: #d5d5d5;
+      }
+      &_copy {
+        font-size: 1rem;
+        color: var(--primary-color);
+        cursor: pointer;
+        margin-bottom: 20px;
+      }
+      &_desc {
+        font-size: 1rem;
+        &_wallet {
+          font-weight: bold;
+          color: #FF8500;
+        }
+      }
+    }
+  }
+  .button {
+    background-color: var(--primary-color);
+    width: 24.5rem;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    border-radius: 0.5rem;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .button_inactive {
+    width: 24.5rem;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    border-radius: 0.5rem;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #d5d5d5;
+  }
+}

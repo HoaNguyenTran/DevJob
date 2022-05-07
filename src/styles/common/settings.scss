@@ -1,0 +1,152 @@
+/* Custom reset */
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+:root {
+  --primary-color: #8218d1;
+  --secondary-color: #ff8500;
+
+  --bg-color: #f5f5f5;
+
+  --white-color: #ffffff;
+  --black-color: #000000;
+  --red-color: #e6161a;
+  --green-color: #06983c;
+  --gray-color: #d3d3d3;
+
+  --tertiary-color: #f1f1f1;
+  --sources-color: #838383;
+  --urgent-color: #c9292b;
+
+  --border-color: #dcdcdc;
+  --bg-item-color: #f5f5f5;
+
+  --border-radius: 7px;
+  --border-2x-radius: 14px;
+  --border-3x-radius: 21px;
+
+  --primary-color-rgb: 73, 43, 124;
+  --secondary-color-rgb: 255, 133, 0;
+  --color-alpha: 0.2;
+
+  --primary-color-hover: #7115b7;
+
+  --secondary-15-color: #ffedd9;
+  --red-15-color: #e6161a26;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+body {
+  overflow-x: hidden;
+  text-align: left;
+  font-family: 'Roboto', sans-serif;
+  
+  // fix width when drawer open
+  width: 100% !important;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  &:hover {
+    color: inherit;
+  }
+}
+
+ul {
+  list-style-type: none;
+}
+
+::selection {
+  background: rgba(var(--secondary-color-rgb), 0.75) !important;
+  color: var(--black-color) !important;
+}
+
+::-moz-selection {
+  background: rgba(var(--secondary-color-rgb), 0.75) !important;
+  color: var(--black-color) !important;
+}
+
+::-webkit-selection {
+  background: rgba(var(--secondary-color-rgb), 0.75) !important;
+  color: var(--black-color) !important;
+}
+
+input,
+textarea,
+button,
+select,
+a {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+// dots password
+// input[type='password'] {
+//   font-family: Verdana;
+//   letter-spacing: 0.125rem;
+// }
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0px 1000px #ffffff inset !important;
+  box-shadow: 0 0 0px 1000px #ffffff inset !important;
+}
+
+// input hide arrow
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+}
+
+textarea {
+  resize: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+.input_custom{
+  // input[type='text'],
+  // input[type='password'],
+  // input[type='number'],
+  // textarea {
+  //   -webkit-appearance: none;
+  // }
+  input[type="number"] {
+    -moz-appearance: textfield;
+  }
+  
+}

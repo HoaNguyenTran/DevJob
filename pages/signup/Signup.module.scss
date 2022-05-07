@@ -1,0 +1,61 @@
+.main {
+  display: flex;
+  min-height: calc(100vh - 5rem);
+  &_img {
+    background-image: url("/assets/images/signin/banner.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+    width: 50vw;
+  }
+  &_wrap {
+    min-height: fit-content;
+    padding: 4rem 2rem 0;
+    margin: 0 auto;
+    // min-width: 576px;
+    // max-width: 800px;
+    &_banner {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 5rem;
+      cursor: pointer;
+       span {
+        margin-top: 1rem;
+        text-align: center;
+        text-transform: uppercase;
+        color: var(--secondary-color);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .main {
+    .main_wrap {
+      padding: 4rem 1rem 1rem;
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .main {
+    .main_wrap {
+      padding: 4rem 1rem 1rem;
+    }
+    &_img {
+      display: none;
+    }
+  }
+}
+
+
+@media screen and (max-width: 576px) {
+  .main {
+    .main_wrap_banner {
+      margin-bottom: 2rem;
+    }
+  }
+}

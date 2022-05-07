@@ -1,0 +1,169 @@
+.candidate {
+  &_candi {
+    border: 1px solid var(--gray-color);
+    border-radius: var(--border-radius);
+    padding: 1rem 2rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2);
+    &:hover {
+      box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.2);
+    }
+
+    &_title {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      &:hover {
+        .candidate_candi_name {
+          text-decoration: underline;
+        }
+      }
+    }
+
+    &_avt {
+      border-radius: 50%;
+    }
+    &_name {
+      color: var(--primary-color);
+      font-size: 1.125rem;
+      font-weight: 500;
+    }
+
+    &_main {
+      padding: 1rem 0 0;
+      display: flex;
+      justify-content: space-between;
+      // background-color: red;
+    }
+
+    &_information {
+    }
+
+    &_info {
+      display: flex;
+      gap: 0.5rem;
+      height: 2rem;
+      +
+      img {
+        width: 1rem;
+        height: 1rem;
+        margin-bottom: 0.25rem;
+        margin-right: 0.25rem;
+      }
+      &_age,
+      &_gender, &_address {
+        display: flex;
+        align-items: center;
+        gap: 0.25rem;
+      }
+      &_address {
+        display: flex;
+        grid-gap: 0.25rem; 
+        gap: 0.25rem;
+        div {
+          max-width: 218px;
+          max-height: 28px;
+          line-height: 26px;
+        }
+      }
+      &_age {
+        padding-right: 0.5rem;
+        border-right: 1px solid var(--border-color);
+      }
+    }
+
+    &_header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &_item {
+      display: flex;
+      align-items: center;
+      div {
+        max-width: 300px;
+        max-height: 28px;
+        line-height: 26px;
+      }
+      img {
+        width: 1rem;
+        height: 1rem;
+        margin-bottom: 0.25rem;
+        margin-bottom: 0.25rem;
+      }
+      span {
+        font-weight: 500;
+        padding: 0.5rem;
+      }
+    }
+    &_icon {
+      margin-right: 1.5rem;
+      cursor: pointer;
+      img {
+        width: 1.5rem;
+        height: 1.5rem;
+      }
+    }
+    &_progress {
+      max-width: 70px;
+      min-width: 70px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 0.5rem;
+      span {
+        font-size: 14px;
+        text-align: center;
+      }
+      .text_des {
+        color: var(--secondary-color);
+      }
+    }
+    &_action {
+      display: flex;
+      button {
+        font-weight: 500;
+        margin-right: 1rem;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 8rem;
+        height: 2.5rem;
+        border: none;
+        border-radius: var(--border-radius);
+      }
+      &_review {
+        button {
+          color: var(--secondary-color);
+        }
+      }
+      &_accept {
+        button {
+          color: var(--primary-color);
+        }
+      }
+      &_reject {
+        button {
+          color: var(--red-color);
+        }
+      }
+      &_contact {
+        button {
+          color: var(--green-color);
+        }
+      }
+    }
+  }
+  &_main {
+    min-height: 10rem;
+    margin: 1rem 2rem;
+
+    &_empty {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 10rem;
+    }
+  }
+}

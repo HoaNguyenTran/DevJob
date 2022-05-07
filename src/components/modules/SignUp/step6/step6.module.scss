@@ -1,0 +1,43 @@
+.main {
+  width: 620px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  &_text {
+    margin: 30px 0px;
+    &_congrat {
+      font-size: 24px;
+      font-weight: bold;
+      
+      
+      line-height: normal;
+      
+      text-align: center;
+      color: var(--primary-color);
+    }
+    &_quote {
+      font-size: 1rem;
+      font-weight: normal;
+      
+      
+      line-height: 1.25;
+      
+      text-align: center;
+      color: var(--black-color);
+    }
+  }
+}
+.btn {
+  width: 100%;
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  border-radius: 10px;
+  margin-top: 20px;
+  height: 44px;
+}
+@media screen and (max-width: 768px) {
+  .main {
+    width: 100%;
+  }
+}

@@ -1,0 +1,106 @@
+.layout_content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  .content_inner {
+    // height: calc(100vh - 5rem);
+    width: 100%;
+    overflow-x: auto;
+    .statusJob {
+      width: 100%;
+      padding: 2rem 0;
+      background: var(--bg-color);
+      min-width: 736px;
+      &_wrap {
+        max-width: 1200px;
+        margin: 0 auto;
+        min-height: calc(50vh);
+        .skeleton {
+          border: 1px solid var(--border-color);
+          border-radius: var(--border-radius);
+          background-color: var(--white-color);
+          padding: 12px;
+          margin: 1rem 0.5rem;
+          box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);
+          height: 150px;
+        }
+      }
+      &_tabs {
+        display: flex;
+        justify-content: space-around;
+        background-color: #EFE5FD;
+        border-radius: 2rem;
+        position: relative;
+        align-items: center;
+        .box_selected {
+          background-color: white;
+          border-radius: 14px;
+          height: 34px;
+          margin-left: 0.2rem;
+          display: inline-block;
+          position: absolute;
+          transition: transform 0.5s ease-in-out;
+          left: 0;
+        }
+      }
+        &_tab {
+        cursor: pointer;
+        padding: 1rem 0;
+        display: flex;
+        align-items: center;
+        z-index: 1;
+      }
+      &_main {
+        padding: 0 1rem;
+        .item {
+          margin: 1rem 0;
+        }
+      }
+      &_pagi {
+        text-align: center;
+        padding: 3rem 0;
+      }
+      .filter {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        align-items: center;
+        margin-top: 20px;
+        .main_wrap_filter_select {
+          display: flex;
+          border: 1px solid #DEDEDE;
+          padding: 0.5rem 1rem;
+          align-items: center;
+          border-radius: .5rem;
+          background-color: white;
+          cursor: pointer;
+          .main_wrap_filter_select_text {
+            font-size: 14px;
+            color: var(--primary-color);
+            margin-right: 2rem;
+          }
+        }
+        .totalJob {
+          .count {
+            color: var(--secondary-color);
+            font-weight: bold;
+          }
+        }
+      }
+      
+    }
+  }
+}
+
+@media screen and (max-width: 736px) {
+  .layout_content {
+    .content_inner {
+      .statusJob {
+        &_tab {
+          font-size: 13px;
+        }
+      }
+    }
+  }
+}

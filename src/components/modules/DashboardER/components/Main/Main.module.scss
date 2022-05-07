@@ -1,0 +1,58 @@
+.main {
+  padding: 0 1rem;
+  .main_inner {
+    background-color: var(--white-color);
+    border-radius: var(--border-2x-radius);
+    padding: 1.5rem 1rem 2rem;
+    .list {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      gap: 1rem;
+      .popup {
+        cursor: pointer;
+      }
+    }
+    .menu {
+      color: var(--black-color);
+      display: inline-block;
+      margin: 0 auto;
+      text-align: center;
+      .img {
+        margin: 1rem 0;
+        img {
+          width: 5rem;
+        }
+      }
+      .text {
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main {
+    .main_inner {
+      padding: 1rem 0.5rem 1rem;
+      .list {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 0.5rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .main {
+    .main_inner {
+      .list {
+        .menu {
+          img {
+            width: 4rem;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,53 @@
+.service {
+  .service_navigator {
+    background-color: var(--white-color);
+    padding: 1rem 0;
+
+    .service_navigator_inner {
+      width: 1140px;
+      margin: 0 auto;
+      // padding: 0 1rem;
+    }
+
+    .navigator_tab {
+      display: flex;
+      align-items: center;
+      background-color: #efe5fd;
+      border-radius: var(--border-radius);
+      height: 3rem;
+      position: relative;
+      width: 100%;
+      
+
+      .navigator_overlay {
+        margin: 0 1rem;
+        height: 2rem;
+        width: 40rem;
+        background-color: var(--white-color);
+        border-radius: var(--border-radius);
+        display: inline-block;
+        position: absolute;
+        transition: transform 0.25s ease-in-out;
+      }
+
+      .tab_tab {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        // margin: 0 1rem;
+        cursor: pointer;
+        span {
+          color: #6e00c2;
+          font-size: 1.125rem;
+          z-index: 1;
+        }
+      }
+    }
+  }
+
+  .service_main {
+    margin: 0 auto;
+    width: 1140px;
+  }
+}

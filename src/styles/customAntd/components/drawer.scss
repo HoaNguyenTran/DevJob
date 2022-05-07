@@ -1,0 +1,10 @@
+
+.ant-drawer-content-wrapper {
+  max-width: 30rem;
+}
+
+@media screen and (max-width: 480px) {
+  .ant-drawer-body {
+    padding: 1rem !important;
+  }
+}

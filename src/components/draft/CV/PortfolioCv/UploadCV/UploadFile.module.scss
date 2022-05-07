@@ -1,0 +1,36 @@
+.manageCV {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 1140px;
+  padding: 40px;
+  border-radius: 10px;
+  background-color: var(--white-color);
+
+  .title {
+    text-transform: uppercase;
+    font-size: 1.125rem;
+    font-weight: bold;
+
+    line-height: 1.22;
+
+    text-align: left;
+    color: var(--black-color);
+  }
+  .content {
+    margin-top: 20px;
+  }
+  .linkCV {
+    max-width: 576px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    &:hover {
+      background-color: var(--border-color);
+      text-decoration: underline;
+    }
+  }
+  .uploadBtn {
+    margin-top: 3rem;
+  }
+}

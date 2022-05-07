@@ -1,0 +1,45 @@
+.userManual {
+  width: 100%;
+  background-color: var(--bg-color);
+  &_wrap {
+    max-width: 992px;
+    margin: 0 auto;
+    padding: 3rem 0;
+  }
+  &_card {
+    padding: 0.5rem;
+  }
+  &_title {
+    font-size: 24px;
+    text-align: center;
+    font-weight: 600;
+    letter-spacing: 1.25px;
+    margin-bottom: 1rem;
+  }
+  &_hotline {
+    text-align: center;
+    a:hover {
+      text-decoration: underline;
+    }
+  }
+  &_main {
+    margin-top: 3rem;
+
+    &_one,
+    &_two {
+      ul {
+        list-style-type: circle;
+        margin: 1rem 0 1.5rem;
+      }
+      li {
+        margin: 0.5rem 0;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .userManual_card {
+    padding: 0;
+  }
+}

@@ -1,0 +1,40 @@
+.modal {
+  min-height: 5rem;
+  .modal_header {
+    display: flex;
+    .title {
+      flex: 1;
+      text-align: center;
+      font-weight: 600;
+      font-size: 1.5rem;
+    }
+    .icon_right {
+      font-size: 1.125rem;
+      color: var(--primary-color);
+    }
+  }
+  .modal_content {
+    margin: 1.5rem 0;
+    min-height: 4rem;
+  }
+  .modal_action {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    .modal_cancel,
+    .modal_confirm {
+      color: var(--primary-color);
+      padding: 0.375rem 1.5rem;
+      border: 1px solid var(--primary-color);
+      border-radius: var(--border-radius);
+      background-color: var(--white-color);
+    }
+    .modal_confirm {
+      color: var(--white-color);
+      background-color: var(--primary-color);
+    }
+    .btn_only {
+      padding: 0.375rem 5rem;
+    }
+  }
+}

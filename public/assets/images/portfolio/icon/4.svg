@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <g id="Group_27364" data-name="Group 27364" transform="translate(-578 -698)">
+    <rect id="Rectangle_160298" data-name="Rectangle 160298" width="16" height="16" transform="translate(578 698)" fill="rgba(255,255,255,0)"/>
+    <g id="Group_27361" data-name="Group 27361" transform="translate(531.5 698)">
+      <path id="Path_52099" data-name="Path 52099" d="M59.75,2H57V1.5A1.5,1.5,0,0,0,55.5,0h-2A1.5,1.5,0,0,0,52,1.5V2H49.25A1.25,1.25,0,0,0,48,3.25v1a.5.5,0,0,0,.5.5h12a.5.5,0,0,0,.5-.5v-1A1.25,1.25,0,0,0,59.75,2ZM53,1.5a.5.5,0,0,1,.5-.5h2a.5.5,0,0,1,.5.5V2H53Z" fill="#6e00c2"/>
+      <path id="Path_52100" data-name="Path 52100" d="M73.52,184a.156.156,0,0,0-.156.164l.412,8.658a1.5,1.5,0,0,0,1.5,1.429h7.593a1.5,1.5,0,0,0,1.5-1.429l.413-8.658a.156.156,0,0,0-.156-.164Zm7.551,1.25a.5.5,0,0,1,1,0v6.5a.5.5,0,0,1-1,0Zm-2.5,0a.5.5,0,0,1,1,0v6.5a.5.5,0,0,1-1,0Zm-2.5,0a.5.5,0,0,1,1,0v6.5a.5.5,0,0,1-1,0Z" transform="translate(-24.572 -178.25)" fill="#6e00c2"/>
+    </g>
+  </g>
+</svg>

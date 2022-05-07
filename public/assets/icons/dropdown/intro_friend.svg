@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="gioithieubanbe" transform="translate(6415 7542)">
+    <rect id="Rectangle_148686" data-name="Rectangle 148686" width="24" height="24" transform="translate(-6415 -7542)" fill="#fff" opacity="0"/>
+    <g id="Group_14251" data-name="Group 14251" transform="translate(-6412.6 -7539.999)">
+      <line id="Line_593" data-name="Line 593" y1="3.215" x2="5.716" transform="translate(6.772 5.57)" fill="none" stroke="#858585" stroke-linejoin="round" stroke-width="1.2"/>
+      <line id="Line_594" data-name="Line 594" x2="5.745" y2="3.222" transform="translate(6.736 11.843)" fill="none" stroke="#858585" stroke-linejoin="round" stroke-width="1.2"/>
+      <circle id="Ellipse_4313" data-name="Ellipse 4313" cx="2.783" cy="2.783" r="2.783" transform="translate(11.329 3.935) rotate(-45)" fill="none" stroke="#858585" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"/>
+      <circle id="Ellipse_4314" data-name="Ellipse 4314" cx="2.783" cy="2.783" r="2.783" transform="matrix(0.974, -0.228, 0.228, 0.974, 11.978, 14.581)" fill="none" stroke="#858585" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"/>
+      <circle id="Ellipse_4315" data-name="Ellipse 4315" cx="2.783" cy="2.783" r="2.783" transform="translate(0 10.296) rotate(-45)" fill="none" stroke="#858585" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"/>
+    </g>
+  </g>
+</svg>

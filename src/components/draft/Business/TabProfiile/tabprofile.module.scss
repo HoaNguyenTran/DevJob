@@ -1,0 +1,45 @@
+.main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  &_tab {
+    margin-top: 20px;
+  }
+  &_top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &_role {
+      border-radius: 10px;
+      width: 200px;
+      border: 1px solid rgb(57, 141, 42) !important;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 5px 20px;
+    }
+    &_btn {
+      &_convert {
+        border-radius: 10px;
+        width: 200px;
+        border: 1px solid rgb(119, 10, 221) !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5px 20px;
+        color: rgb(119, 10, 221);
+      }
+      &_remove {
+        border-radius: 10px;
+        width: 200px;
+        border: 1px solid rgb(231, 19, 19) !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5px 20px;
+        color: rgb(231, 19, 19);
+      }
+    }
+  }
+}

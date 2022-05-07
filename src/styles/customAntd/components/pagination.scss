@@ -1,0 +1,31 @@
+.ant-pagination-options {
+  display: none !important;
+}
+
+.ant-pagination-item-active a,
+.ant-pagination-item:focus-visible a,
+.ant-pagination-item:hover a {
+  color: var(--primary-color) !important;
+}
+
+.ant-pagination-item-active,
+.ant-pagination-item:focus-visible,
+.ant-pagination-item:hover {
+  border-color: var(--primary-color) !important;
+}
+.ant-pagination-next:hover .ant-pagination-item-link,
+.ant-pagination-next:hover .ant-pagination-item-link,
+.ant-pagination-prev:hover .ant-pagination-item-link,
+.ant-pagination-prev:hover .ant-pagination-item-link {
+  color: var(--primary-color) !important;
+  border-color: var(--primary-color) !important;
+}
+
+.ant-pagination-item,
+.ant-pagination-item-link {
+  border-radius: 4px !important;
+}
+
+.ant-pagination-item-link-icon {
+  color: var(--primary-color) !important;
+}

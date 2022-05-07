@@ -1,0 +1,30 @@
+.btn-call {
+  cursor: pointer;
+  background-color: var(--green-color) !important;
+  color: var(--white-color) !important;
+  border-radius: var(--border-radius);
+  border: none;
+  // padding: 10px;
+}
+.confirm-payment {
+  font-weight: bold;
+  text-align: center;
+  font-size: 1rem;
+}
+.btn {
+  box-sizing: border-box;
+  width: 100px;
+  padding: 5px 0;
+  border-radius: 4px;
+  outline: none;
+  border: 1px solid var(--primary-color);
+}
+.btn-cancelpayment {
+  margin-right: 5px;
+  color: var(--primary-color);
+  background-color: var(--white-color);
+}
+.btn-confirmpayment {
+  color: var(--white-color);
+  background-color: var(--primary-color);
+}

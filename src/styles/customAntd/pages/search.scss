@@ -1,0 +1,21 @@
+
+.search {
+  .ant-select-selector {
+    background-color: var(--bg-color) !important;
+    border: none !important;
+  }
+
+  .ant-cascader-input {
+    border: none;
+    &:focus {
+      box-shadow: none;
+    }
+  }
+  .ant-cascader-picker {
+    background-color: var(--bg-color);
+  }
+
+  .ant-select-focused:not(.ant-select-disabled).ant-select:not(.ant-select-customize-input) .ant-select-selector {
+    box-shadow: none;
+  }
+}
